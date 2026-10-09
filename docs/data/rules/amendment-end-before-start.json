@@ -1,10 +1,10 @@
 {
  "rule": "amendment-end-before-start",
  "rule_version": "0.1.0",
- "evaluated_at": "2026-10-09T12:03:42+00:00",
- "run_id": "37927535530",
+ "evaluated_at": "2026-10-09T13:23:48+00:00",
+ "run_id": "37936442232",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37936442232",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "recife_aditivos": {

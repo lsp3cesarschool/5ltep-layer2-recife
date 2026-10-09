@@ -1,10 +1,10 @@
 {
  "layer": 2,
- "run_id": "37927535530",
+ "run_id": "37936442232",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
- "generated_at": "2026-10-09T12:03:46+00:00",
- "started_at": "2026-10-09T12:03:18+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37936442232",
+ "generated_at": "2026-10-09T13:23:52+00:00",
+ "started_at": "2026-10-09T13:23:15+00:00",
  "totals": {
   "rules": 12,
   "evaluated": 12,
@@ -53,7 +53,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:42+00:00",
+   "evaluated_at": "2026-10-09T13:23:48+00:00",
    "total": 13390,
    "counts": {
     "match": 11835,
@@ -117,7 +117,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:43+00:00",
+   "evaluated_at": "2026-10-09T13:23:48+00:00",
    "total": 13390,
    "counts": {
     "match": 13390,
@@ -177,7 +177,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:43+00:00",
+   "evaluated_at": "2026-10-09T13:23:48+00:00",
    "total": 7912,
    "counts": {
     "match": 7899,
@@ -237,7 +237,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:43+00:00",
+   "evaluated_at": "2026-10-09T13:23:49+00:00",
    "total": 22641,
    "counts": {
     "match": 22412,
@@ -297,7 +297,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:43+00:00",
+   "evaluated_at": "2026-10-09T13:23:49+00:00",
    "total": 22641,
    "counts": {
     "match": 22611,
@@ -357,7 +357,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:43+00:00",
+   "evaluated_at": "2026-10-09T13:23:49+00:00",
    "total": 49924,
    "counts": {
     "match": 43398,
@@ -417,7 +417,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:44+00:00",
+   "evaluated_at": "2026-10-09T13:23:50+00:00",
    "total": 49924,
    "counts": {
     "match": 17793,
@@ -477,7 +477,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:44+00:00",
+   "evaluated_at": "2026-10-09T13:23:50+00:00",
    "total": 49924,
    "counts": {
     "match": 17808,
@@ -538,7 +538,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:44+00:00",
+   "evaluated_at": "2026-10-09T13:23:50+00:00",
    "total": 12016,
    "counts": {
     "match": 10842,
@@ -598,7 +598,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:44+00:00",
+   "evaluated_at": "2026-10-09T13:23:50+00:00",
    "total": 12016,
    "counts": {
     "match": 10897,
@@ -658,7 +658,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:45+00:00",
+   "evaluated_at": "2026-10-09T13:23:52+00:00",
    "total": 381128,
    "counts": {
     "match": 381128,
@@ -718,7 +718,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T12:03:46+00:00",
+   "evaluated_at": "2026-10-09T13:23:52+00:00",
    "total": 381128,
    "counts": {
     "match": 381127,
@@ -756,7 +756,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 2.27
+    "seconds": 2.59
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
@@ -782,8 +782,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 5984530,
     "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
-    "seconds": 3.33,
-    "mb_per_s": 1.798
+    "seconds": 4.62,
+    "mb_per_s": 1.295
    },
    "files": [
     {
@@ -810,7 +810,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.24
+    "seconds": 0.33
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
@@ -836,8 +836,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 3675647,
     "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
-    "seconds": 1.08,
-    "mb_per_s": 3.401
+    "seconds": 1.15,
+    "mb_per_s": 3.186
    },
    "files": [
     {
@@ -864,7 +864,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.68
+    "seconds": 0.72
    },
    "dataset": {
     "title": "Casos de Dengue, Zika e Chikungunya",
@@ -886,8 +886,8 @@
    "download": {
     "http_status": 200,
     "bytes": 13170277,
-    "seconds": 3.23,
-    "mb_per_s": 4.077,
+    "seconds": 4.33,
+    "mb_per_s": 3.039,
     "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -931,7 +931,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.3
+    "seconds": 0.31
    },
    "dataset": {
     "title": "Licenciamento Ambiental",
@@ -957,8 +957,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 40534357,
     "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2",
-    "seconds": 2.83,
-    "mb_per_s": 14.318
+    "seconds": 3.36,
+    "mb_per_s": 12.06
    },
    "files": [
     {
@@ -985,7 +985,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.49
+    "seconds": 0.54
    },
    "dataset": {
     "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
@@ -1007,8 +1007,8 @@
    "download": {
     "http_status": 200,
     "bytes": 3657092,
-    "seconds": 2.81,
-    "mb_per_s": 1.302,
+    "seconds": 3.56,
+    "mb_per_s": 1.028,
     "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -1051,7 +1051,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.27
+    "seconds": 0.35
    },
    "dataset": {
     "title": "Pesagem de Coletas de Resíduos",
@@ -1073,8 +1073,8 @@
    "download": {
     "http_status": 200,
     "bytes": 82554349,
-    "seconds": 6.21,
-    "mb_per_s": 13.294,
+    "seconds": 10.85,
+    "mb_per_s": 7.612,
     "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -1104,7 +1104,7 @@
   }
  ],
  "engine": {
-  "commit": "711f0c51c6857ca4c9567d4191101622eb36753f",
+  "commit": "f8f0daed45dcb5d7ff2858f922b19fa31a57fe45",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -1188,8 +1188,8 @@
   "primary": {
    "resources": 6,
    "bytes": 149576252,
-   "seconds": 19.49,
-   "mb_per_s": 7.675
+   "seconds": 27.87,
+   "mb_per_s": 5.367
   },
   "secondary": {
    "resources": 0,
@@ -1199,15 +1199,15 @@
   },
   "processing": {
    "bytes": 149576252,
-   "seconds": 3.48,
-   "mb_per_s": 42.982
+   "seconds": 4.26,
+   "mb_per_s": 35.112
   }
  },
  "timings": {
-  "download_s": 23.75,
-  "processing_s": 3.48,
+  "download_s": 32.7,
+  "processing_s": 4.26,
   "bytes_processed": 149576252,
-  "outputs_s": 0.01
+  "outputs_s": 0.02
  },
  "portal": {
   "portal_url": "https://dados.recife.pe.gov.br",
@@ -1630,6 +1630,214 @@
     "processing_s": 3.48,
     "bytes_processed": 149576252,
     "outputs_s": 0.01
+   }
+  },
+  {
+   "run_id": "37936442232",
+   "environment": "github-actions",
+   "at": "2026-10-09T13:23:52+00:00",
+   "rules": {
+    "amendment-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 13390,
+     "counts": {
+      "match": 11835,
+      "mismatch": 40,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1515
+     }
+    },
+    "amendment-without-contract": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 13390,
+     "counts": {
+      "match": 13390,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "contract-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 7912,
+     "counts": {
+      "match": 7899,
+      "mismatch": 6,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 7
+     }
+    },
+    "dengue-birth-after-notification": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 22641,
+     "counts": {
+      "match": 22412,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 229
+     }
+    },
+    "dengue-symptoms-after-notification": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 22641,
+     "counts": {
+      "match": 22611,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 30
+     }
+    },
+    "enterprise-coordinates-outside-recife": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 49924,
+     "counts": {
+      "match": 43398,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 6526
+     }
+    },
+    "licence-issued-before-request": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 49924,
+     "counts": {
+      "match": 17793,
+      "mismatch": 15,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32116
+     }
+    },
+    "licence-validity-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 49924,
+     "counts": {
+      "match": 17808,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32116
+     }
+    },
+    "fatal-victims-above-victims": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 12016,
+     "counts": {
+      "match": 10842,
+      "mismatch": 55,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1119
+     }
+    },
+    "no-victim-accident-with-victims": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 12016,
+     "counts": {
+      "match": 10897,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1119
+     }
+    },
+    "weighing-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 381128,
+     "counts": {
+      "match": 381128,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "weighing-net-weight-balance": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 381128,
+     "counts": {
+      "match": 381127,
+      "mismatch": 1,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dados.recife.pe.gov.br › contratos › Termo Aditivo": "ok",
+    "dados.recife.pe.gov.br › contratos › Contratos": "ok",
+    "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]": "ok",
+    "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental": "ok",
+    "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]": "ok",
+    "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 6,
+     "bytes": 149576252,
+     "seconds": 27.87,
+     "mb_per_s": 5.367
+    },
+    "secondary": {
+     "resources": 0,
+     "bytes": 0,
+     "seconds": 0,
+     "mb_per_s": null
+    },
+    "processing": {
+     "bytes": 149576252,
+     "seconds": 4.26,
+     "mb_per_s": 35.112
+    }
+   },
+   "timings": {
+    "download_s": 32.7,
+    "processing_s": 4.26,
+    "bytes_processed": 149576252,
+    "outputs_s": 0.02
    }
   }
  ]
