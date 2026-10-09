@@ -1,11 +1,11 @@
 {
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
- "started_at": "2026-10-09T10:21:49+00:00",
- "finished_at": "2026-10-09T10:22:17+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
+ "started_at": "2026-10-09T12:03:18+00:00",
+ "finished_at": "2026-10-09T12:03:46+00:00",
  "engine": {
-  "commit": "2f42cad7ffadebc1aaa3d48a26913c052868df45",
+  "commit": "711f0c51c6857ca4c9567d4191101622eb36753f",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -15,8 +15,8 @@
   "primary": {
    "resources": 6,
    "bytes": 149576252,
-   "seconds": 21.04,
-   "mb_per_s": 7.109
+   "seconds": 19.49,
+   "mb_per_s": 7.675
   },
   "secondary": {
    "resources": 0,
@@ -26,8 +26,8 @@
   },
   "processing": {
    "bytes": 149576252,
-   "seconds": 2.58,
-   "mb_per_s": 57.975
+   "seconds": 3.48,
+   "mb_per_s": 42.982
   }
  },
  "rules": [
@@ -39,9 +39,9 @@
   },
   {
    "id": "amendment-without-contract",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "contracts/amendment-without-contract.yaml",
-   "sha256": "80a5a173e1ce35593e4012b3925e5ead016e8807b94ae304477051fca5aaa104"
+   "sha256": "4b0ee940852345a3bc06d600a34bff6a7568c72f56354eaa2f59d2c4b702ed80"
   },
   {
    "id": "contract-end-before-start",
@@ -75,21 +75,21 @@
   },
   {
    "id": "licence-validity-before-issue",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "licensing/licence-validity-before-issue.yaml",
-   "sha256": "703426beeeca5f7406f07add61186c933aa76a30f8a334672bd2a324ee2d917b"
+   "sha256": "8d227ba4be8c4c4b1c5e13331c6508c0375b199ec74cdcc3cbbce8228f06ef12"
   },
   {
    "id": "fatal-victims-above-victims",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "traffic/fatal-victims-above-victims.yaml",
-   "sha256": "518606e0a080c5e47c3c0b5a389de8252c781e7e440ee2912164de666243ecf5"
+   "sha256": "b39cb37aaef396ca6e0f5195e9fec2e08939087536eecb95217173e11eede6da"
   },
   {
    "id": "no-victim-accident-with-victims",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "traffic/no-victim-accident-with-victims.yaml",
-   "sha256": "779feea657c2cc92b3d2f8bcf52b0dbf5f9af9d0c6b9052e2a6c812c8f551aa1"
+   "sha256": "4d296216358c4e2286136aa6678381a0aac4f3c6066960a162d9f1ecca9ebe1b"
   },
   {
    "id": "weighing-end-before-start",

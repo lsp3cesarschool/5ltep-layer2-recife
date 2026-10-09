@@ -1,9 +1,9 @@
 {
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
  "id": "licence-validity-before-issue",
- "rule_version": "0.1.0",
+ "rule_version": "0.1.1",
  "origin": "expert",
  "file": "licensing/licence-validity-before-issue.yaml",
  "folder": "licensing",
@@ -13,7 +13,7 @@
   "en": "Municipal licence valid until a date before it was issued"
  },
  "text": "Confere se a data de validade da licença ambiental não é anterior à data de emissão.\n",
- "justification": "A licença vale depois de emitida; validade anterior à emissão indica erro de data. Mesma família de IB-24 no IBAMA. É sinal para revisão.\n",
+ "justification": "A licença vale depois de emitida; validade anterior à emissão indica erro de data. É sinal para revisão.\n",
  "exceptions": [
   "Processos sem licença emitida ficam fora do escopo."
  ],
@@ -30,7 +30,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T10:22:15+00:00",
+ "evaluated_at": "2026-10-09T12:03:44+00:00",
  "total": 49924,
  "counts": {
   "match": 17808,

@@ -1,8 +1,8 @@
 {
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
- "checked_at": "2026-10-09T10:22:17+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
+ "checked_at": "2026-10-09T12:03:46+00:00",
  "sources": [
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -19,12 +19,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 1.81
+    "seconds": 2.27
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
     "organization": "Secretaria de Administração e Gestão de Pessoas",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-02T14:29:17.688418"
    },
    "resource": {
@@ -43,8 +45,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 5984530,
     "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
-    "seconds": 4.15,
-    "mb_per_s": 1.444
+    "seconds": 3.33,
+    "mb_per_s": 1.798
    },
    "files": [
     {
@@ -71,12 +73,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.27
+    "seconds": 0.24
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
     "organization": "Secretaria de Administração e Gestão de Pessoas",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-02T14:29:17.688418"
    },
    "resource": {
@@ -95,8 +99,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 3675647,
     "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
-    "seconds": 1.1,
-    "mb_per_s": 3.35
+    "seconds": 1.08,
+    "mb_per_s": 3.401
    },
    "files": [
     {
@@ -123,12 +127,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.67
+    "seconds": 0.68
    },
    "dataset": {
     "title": "Casos de Dengue, Zika e Chikungunya",
     "organization": "Secretaria de Saúde",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-05-20T10:28:07.518396"
    },
    "resource": {
@@ -143,8 +149,8 @@
    "download": {
     "http_status": 200,
     "bytes": 13170277,
-    "seconds": 3.05,
-    "mb_per_s": 4.311,
+    "seconds": 3.23,
+    "mb_per_s": 4.077,
     "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -188,12 +194,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.28
+    "seconds": 0.3
    },
    "dataset": {
     "title": "Licenciamento Ambiental",
     "organization": "Secretaria de Meio Ambiente e Sustentabilidade",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-06-17T11:58:42.548491"
    },
    "resource": {
@@ -212,8 +220,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 40534357,
     "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2",
-    "seconds": 3.26,
-    "mb_per_s": 12.446
+    "seconds": 2.83,
+    "mb_per_s": 14.318
    },
    "files": [
     {
@@ -240,12 +248,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.67
+    "seconds": 0.49
    },
    "dataset": {
     "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
     "organization": "Autarquia de Trânsito e Transporte Urbano do Recife - CTTU",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-02T13:45:27.485944"
    },
    "resource": {
@@ -260,8 +270,8 @@
    "download": {
     "http_status": 200,
     "bytes": 3657092,
-    "seconds": 2.88,
-    "mb_per_s": 1.271,
+    "seconds": 2.81,
+    "mb_per_s": 1.302,
     "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -304,12 +314,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.3
+    "seconds": 0.27
    },
    "dataset": {
     "title": "Pesagem de Coletas de Resíduos",
     "organization": "Empresa de Manutenção e Limpeza Urbana - EMLURB",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-04T13:10:34.128868"
    },
    "resource": {
@@ -324,8 +336,8 @@
    "download": {
     "http_status": 200,
     "bytes": 82554349,
-    "seconds": 6.6,
-    "mb_per_s": 12.507,
+    "seconds": 6.21,
+    "mb_per_s": 13.294,
     "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },

@@ -1,9 +1,9 @@
 {
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
  "id": "amendment-without-contract",
- "rule_version": "0.1.0",
+ "rule_version": "0.1.1",
  "origin": "cross_reference",
  "file": "contracts/amendment-without-contract.yaml",
  "folder": "contracts",
@@ -13,7 +13,7 @@
   "en": "Amendment without a matching contract in the extract"
  },
  "text": "Confere se o número do contrato de cada termo aditivo existe no extrato de contratos.\n",
- "justification": "Todo aditivo pertence a um contrato; aditivo cujo contrato não aparece no extrato indica vínculo quebrado ou extratos de coberturas diferentes. Ausência no extrato não prova inexistência do contrato no sistema de origem (mesma família de IB-17 no IBAMA). É sinal para revisão.\n",
+ "justification": "Todo aditivo pertence a um contrato; aditivo cujo contrato não aparece no extrato indica vínculo quebrado ou extratos de coberturas diferentes. Ausência no extrato não prova inexistência do contrato no sistema de origem. É sinal para revisão.\n",
  "exceptions": [
   "Contratos antigos podem não constar do extrato publicado."
  ],
@@ -34,7 +34,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T10:22:14+00:00",
+ "evaluated_at": "2026-10-09T12:03:43+00:00",
  "total": 13390,
  "counts": {
   "match": 13390,

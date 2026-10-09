@@ -1,7 +1,7 @@
 {
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
  "id": "dengue-birth-after-notification",
  "rule_version": "0.2.0",
  "origin": "expert",
@@ -30,7 +30,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T10:22:14+00:00",
+ "evaluated_at": "2026-10-09T12:03:43+00:00",
  "total": 22641,
  "counts": {
   "match": 22412,

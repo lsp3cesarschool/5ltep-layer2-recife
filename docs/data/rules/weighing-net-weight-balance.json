@@ -1,10 +1,10 @@
 {
  "rule": "weighing-net-weight-balance",
  "rule_version": "0.1.0",
- "evaluated_at": "2026-10-09T10:22:17+00:00",
- "run_id": "37917109973",
+ "evaluated_at": "2026-10-09T12:03:46+00:00",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "recife_pesagem": {

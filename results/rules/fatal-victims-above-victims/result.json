@@ -1,9 +1,9 @@
 {
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
  "id": "fatal-victims-above-victims",
- "rule_version": "0.1.0",
+ "rule_version": "0.1.1",
  "origin": "expert",
  "file": "traffic/fatal-victims-above-victims.yaml",
  "folder": "traffic",
@@ -12,11 +12,11 @@
  "title_translations": {
   "en": "Fatal victims above the total number of victims"
  },
- "text": "Confere, em cada acidente de 2022 a 2024, se o número de vítimas fatais não passa do número de vítimas.\n",
+ "text": "Confere, em cada acidente, se o número de vítimas fatais não passa do número de vítimas.\n",
  "justification": "Se o campo de vítimas inclui as fatais, as fatais não podem passar do total (ABNT NBR 10697, termos de sinistros de trânsito). Divergência indica erro de registro, ou que vítimas conta só feridos; o dicionário do recurso precisa confirmar. Contagens publicadas como número com vírgula (1,0). Chamados cancelados ou duplicados ficam fora. É sinal para revisão.\n",
  "exceptions": [
   "Se 'vitimas' contar só feridos não fatais, a comparação não se sustenta.",
-  "Os anos anteriores a 2022 usam outros nomes de coluna e ficam fora desta regra."
+  "Os anos com outros nomes de coluna ficam fora desta regra."
  ],
  "template": "field-comparison",
  "evaluated_source": "recife_acidentes",
@@ -31,7 +31,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T10:22:15+00:00",
+ "evaluated_at": "2026-10-09T12:03:44+00:00",
  "total": 12016,
  "counts": {
   "match": 10842,

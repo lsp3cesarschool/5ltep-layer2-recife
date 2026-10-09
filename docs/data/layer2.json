@@ -1,10 +1,10 @@
 {
  "layer": 2,
- "run_id": "37917109973",
+ "run_id": "37927535530",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
- "generated_at": "2026-10-09T10:22:17+00:00",
- "started_at": "2026-10-09T10:21:49+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37927535530",
+ "generated_at": "2026-10-09T12:03:46+00:00",
+ "started_at": "2026-10-09T12:03:18+00:00",
  "totals": {
   "rules": 12,
   "evaluated": 12,
@@ -53,7 +53,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:14+00:00",
+   "evaluated_at": "2026-10-09T12:03:42+00:00",
    "total": 13390,
    "counts": {
     "match": 11835,
@@ -76,7 +76,7 @@
   },
   {
    "id": "amendment-without-contract",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "origin": "cross_reference",
    "file": "contracts/amendment-without-contract.yaml",
    "folder": "contracts",
@@ -86,7 +86,7 @@
     "en": "Amendment without a matching contract in the extract"
    },
    "text": "Confere se o número do contrato de cada termo aditivo existe no extrato de contratos.\n",
-   "justification": "Todo aditivo pertence a um contrato; aditivo cujo contrato não aparece no extrato indica vínculo quebrado ou extratos de coberturas diferentes. Ausência no extrato não prova inexistência do contrato no sistema de origem (mesma família de IB-17 no IBAMA). É sinal para revisão.\n",
+   "justification": "Todo aditivo pertence a um contrato; aditivo cujo contrato não aparece no extrato indica vínculo quebrado ou extratos de coberturas diferentes. Ausência no extrato não prova inexistência do contrato no sistema de origem. É sinal para revisão.\n",
    "exceptions": [
     "Contratos antigos podem não constar do extrato publicado."
    ],
@@ -117,7 +117,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:14+00:00",
+   "evaluated_at": "2026-10-09T12:03:43+00:00",
    "total": 13390,
    "counts": {
     "match": 13390,
@@ -177,7 +177,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:14+00:00",
+   "evaluated_at": "2026-10-09T12:03:43+00:00",
    "total": 7912,
    "counts": {
     "match": 7899,
@@ -237,7 +237,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:14+00:00",
+   "evaluated_at": "2026-10-09T12:03:43+00:00",
    "total": 22641,
    "counts": {
     "match": 22412,
@@ -297,7 +297,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:14+00:00",
+   "evaluated_at": "2026-10-09T12:03:43+00:00",
    "total": 22641,
    "counts": {
     "match": 22611,
@@ -357,7 +357,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:15+00:00",
+   "evaluated_at": "2026-10-09T12:03:43+00:00",
    "total": 49924,
    "counts": {
     "match": 43398,
@@ -417,7 +417,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:15+00:00",
+   "evaluated_at": "2026-10-09T12:03:44+00:00",
    "total": 49924,
    "counts": {
     "match": 17793,
@@ -440,7 +440,7 @@
   },
   {
    "id": "licence-validity-before-issue",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "origin": "expert",
    "file": "licensing/licence-validity-before-issue.yaml",
    "folder": "licensing",
@@ -450,7 +450,7 @@
     "en": "Municipal licence valid until a date before it was issued"
    },
    "text": "Confere se a data de validade da licença ambiental não é anterior à data de emissão.\n",
-   "justification": "A licença vale depois de emitida; validade anterior à emissão indica erro de data. Mesma família de IB-24 no IBAMA. É sinal para revisão.\n",
+   "justification": "A licença vale depois de emitida; validade anterior à emissão indica erro de data. É sinal para revisão.\n",
    "exceptions": [
     "Processos sem licença emitida ficam fora do escopo."
    ],
@@ -477,7 +477,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:15+00:00",
+   "evaluated_at": "2026-10-09T12:03:44+00:00",
    "total": 49924,
    "counts": {
     "match": 17808,
@@ -500,7 +500,7 @@
   },
   {
    "id": "fatal-victims-above-victims",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "origin": "expert",
    "file": "traffic/fatal-victims-above-victims.yaml",
    "folder": "traffic",
@@ -509,11 +509,11 @@
    "title_translations": {
     "en": "Fatal victims above the total number of victims"
    },
-   "text": "Confere, em cada acidente de 2022 a 2024, se o número de vítimas fatais não passa do número de vítimas.\n",
+   "text": "Confere, em cada acidente, se o número de vítimas fatais não passa do número de vítimas.\n",
    "justification": "Se o campo de vítimas inclui as fatais, as fatais não podem passar do total (ABNT NBR 10697, termos de sinistros de trânsito). Divergência indica erro de registro, ou que vítimas conta só feridos; o dicionário do recurso precisa confirmar. Contagens publicadas como número com vírgula (1,0). Chamados cancelados ou duplicados ficam fora. É sinal para revisão.\n",
    "exceptions": [
     "Se 'vitimas' contar só feridos não fatais, a comparação não se sustenta.",
-    "Os anos anteriores a 2022 usam outros nomes de coluna e ficam fora desta regra."
+    "Os anos com outros nomes de coluna ficam fora desta regra."
    ],
    "examples": [
     {
@@ -538,7 +538,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:15+00:00",
+   "evaluated_at": "2026-10-09T12:03:44+00:00",
    "total": 12016,
    "counts": {
     "match": 10842,
@@ -561,7 +561,7 @@
   },
   {
    "id": "no-victim-accident-with-victims",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "origin": "expert",
    "file": "traffic/no-victim-accident-with-victims.yaml",
    "folder": "traffic",
@@ -570,7 +570,7 @@
    "title_translations": {
     "en": "Accident recorded without victims but with victims counted"
    },
-   "text": "Sinaliza acidentes de 2022 a 2024 de natureza SEM VÍTIMA com número de vítimas maior que zero.\n",
+   "text": "Sinaliza acidentes de natureza SEM VÍTIMA com número de vítimas maior que zero.\n",
    "justification": "A natureza do acidente e o número de vítimas descrevem o mesmo fato; \"SEM VÍTIMA\" com vítimas contadas indica erro de codificação de um dos campos. Chamados cancelados ou duplicados ficam fora. É sinal para revisão.\n",
    "exceptions": [
     "A natureza pode ter sido registrada no chamado e as vítimas apuradas depois."
@@ -598,7 +598,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:15+00:00",
+   "evaluated_at": "2026-10-09T12:03:44+00:00",
    "total": 12016,
    "counts": {
     "match": 10897,
@@ -658,7 +658,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:16+00:00",
+   "evaluated_at": "2026-10-09T12:03:45+00:00",
    "total": 381128,
    "counts": {
     "match": 381128,
@@ -718,7 +718,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T10:22:17+00:00",
+   "evaluated_at": "2026-10-09T12:03:46+00:00",
    "total": 381128,
    "counts": {
     "match": 381127,
@@ -756,12 +756,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 1.81
+    "seconds": 2.27
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
     "organization": "Secretaria de Administração e Gestão de Pessoas",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-02T14:29:17.688418"
    },
    "resource": {
@@ -780,8 +782,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 5984530,
     "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
-    "seconds": 4.15,
-    "mb_per_s": 1.444
+    "seconds": 3.33,
+    "mb_per_s": 1.798
    },
    "files": [
     {
@@ -808,12 +810,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.27
+    "seconds": 0.24
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
     "organization": "Secretaria de Administração e Gestão de Pessoas",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-02T14:29:17.688418"
    },
    "resource": {
@@ -832,8 +836,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 3675647,
     "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
-    "seconds": 1.1,
-    "mb_per_s": 3.35
+    "seconds": 1.08,
+    "mb_per_s": 3.401
    },
    "files": [
     {
@@ -860,12 +864,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.67
+    "seconds": 0.68
    },
    "dataset": {
     "title": "Casos de Dengue, Zika e Chikungunya",
     "organization": "Secretaria de Saúde",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-05-20T10:28:07.518396"
    },
    "resource": {
@@ -880,8 +886,8 @@
    "download": {
     "http_status": 200,
     "bytes": 13170277,
-    "seconds": 3.05,
-    "mb_per_s": 4.311,
+    "seconds": 3.23,
+    "mb_per_s": 4.077,
     "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -925,12 +931,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.28
+    "seconds": 0.3
    },
    "dataset": {
     "title": "Licenciamento Ambiental",
     "organization": "Secretaria de Meio Ambiente e Sustentabilidade",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-06-17T11:58:42.548491"
    },
    "resource": {
@@ -949,8 +957,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 40534357,
     "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2",
-    "seconds": 3.26,
-    "mb_per_s": 12.446
+    "seconds": 2.83,
+    "mb_per_s": 14.318
    },
    "files": [
     {
@@ -977,12 +985,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.67
+    "seconds": 0.49
    },
    "dataset": {
     "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
     "organization": "Autarquia de Trânsito e Transporte Urbano do Recife - CTTU",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-02T13:45:27.485944"
    },
    "resource": {
@@ -997,8 +1007,8 @@
    "download": {
     "http_status": 200,
     "bytes": 3657092,
-    "seconds": 2.88,
-    "mb_per_s": 1.271,
+    "seconds": 2.81,
+    "mb_per_s": 1.302,
     "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -1041,12 +1051,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.3
+    "seconds": 0.27
    },
    "dataset": {
     "title": "Pesagem de Coletas de Resíduos",
     "organization": "Empresa de Manutenção e Limpeza Urbana - EMLURB",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-03-04T13:10:34.128868"
    },
    "resource": {
@@ -1061,8 +1073,8 @@
    "download": {
     "http_status": 200,
     "bytes": 82554349,
-    "seconds": 6.6,
-    "mb_per_s": 12.507,
+    "seconds": 6.21,
+    "mb_per_s": 13.294,
     "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -1092,7 +1104,7 @@
   }
  ],
  "engine": {
-  "commit": "2f42cad7ffadebc1aaa3d48a26913c052868df45",
+  "commit": "711f0c51c6857ca4c9567d4191101622eb36753f",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -1106,9 +1118,9 @@
   },
   {
    "id": "amendment-without-contract",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "contracts/amendment-without-contract.yaml",
-   "sha256": "80a5a173e1ce35593e4012b3925e5ead016e8807b94ae304477051fca5aaa104"
+   "sha256": "4b0ee940852345a3bc06d600a34bff6a7568c72f56354eaa2f59d2c4b702ed80"
   },
   {
    "id": "contract-end-before-start",
@@ -1142,21 +1154,21 @@
   },
   {
    "id": "licence-validity-before-issue",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "licensing/licence-validity-before-issue.yaml",
-   "sha256": "703426beeeca5f7406f07add61186c933aa76a30f8a334672bd2a324ee2d917b"
+   "sha256": "8d227ba4be8c4c4b1c5e13331c6508c0375b199ec74cdcc3cbbce8228f06ef12"
   },
   {
    "id": "fatal-victims-above-victims",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "traffic/fatal-victims-above-victims.yaml",
-   "sha256": "518606e0a080c5e47c3c0b5a389de8252c781e7e440ee2912164de666243ecf5"
+   "sha256": "b39cb37aaef396ca6e0f5195e9fec2e08939087536eecb95217173e11eede6da"
   },
   {
    "id": "no-victim-accident-with-victims",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "traffic/no-victim-accident-with-victims.yaml",
-   "sha256": "779feea657c2cc92b3d2f8bcf52b0dbf5f9af9d0c6b9052e2a6c812c8f551aa1"
+   "sha256": "4d296216358c4e2286136aa6678381a0aac4f3c6066960a162d9f1ecca9ebe1b"
   },
   {
    "id": "weighing-end-before-start",
@@ -1176,8 +1188,8 @@
   "primary": {
    "resources": 6,
    "bytes": 149576252,
-   "seconds": 21.04,
-   "mb_per_s": 7.109
+   "seconds": 19.49,
+   "mb_per_s": 7.675
   },
   "secondary": {
    "resources": 0,
@@ -1187,13 +1199,13 @@
   },
   "processing": {
    "bytes": 149576252,
-   "seconds": 2.58,
-   "mb_per_s": 57.975
+   "seconds": 3.48,
+   "mb_per_s": 42.982
   }
  },
  "timings": {
-  "download_s": 25.04,
-  "processing_s": 2.58,
+  "download_s": 23.75,
+  "processing_s": 3.48,
   "bytes_processed": 149576252,
   "outputs_s": 0.01
  },
@@ -1408,6 +1420,214 @@
    "timings": {
     "download_s": 25.04,
     "processing_s": 2.58,
+    "bytes_processed": 149576252,
+    "outputs_s": 0.01
+   }
+  },
+  {
+   "run_id": "37927535530",
+   "environment": "github-actions",
+   "at": "2026-10-09T12:03:46+00:00",
+   "rules": {
+    "amendment-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 13390,
+     "counts": {
+      "match": 11835,
+      "mismatch": 40,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1515
+     }
+    },
+    "amendment-without-contract": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 13390,
+     "counts": {
+      "match": 13390,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "contract-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 7912,
+     "counts": {
+      "match": 7899,
+      "mismatch": 6,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 7
+     }
+    },
+    "dengue-birth-after-notification": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 22641,
+     "counts": {
+      "match": 22412,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 229
+     }
+    },
+    "dengue-symptoms-after-notification": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 22641,
+     "counts": {
+      "match": 22611,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 30
+     }
+    },
+    "enterprise-coordinates-outside-recife": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 49924,
+     "counts": {
+      "match": 43398,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 6526
+     }
+    },
+    "licence-issued-before-request": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 49924,
+     "counts": {
+      "match": 17793,
+      "mismatch": 15,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32116
+     }
+    },
+    "licence-validity-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 49924,
+     "counts": {
+      "match": 17808,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32116
+     }
+    },
+    "fatal-victims-above-victims": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 12016,
+     "counts": {
+      "match": 10842,
+      "mismatch": 55,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1119
+     }
+    },
+    "no-victim-accident-with-victims": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 12016,
+     "counts": {
+      "match": 10897,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1119
+     }
+    },
+    "weighing-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 381128,
+     "counts": {
+      "match": 381128,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "weighing-net-weight-balance": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 381128,
+     "counts": {
+      "match": 381127,
+      "mismatch": 1,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dados.recife.pe.gov.br › contratos › Termo Aditivo": "ok",
+    "dados.recife.pe.gov.br › contratos › Contratos": "ok",
+    "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]": "ok",
+    "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental": "ok",
+    "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]": "ok",
+    "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 6,
+     "bytes": 149576252,
+     "seconds": 19.49,
+     "mb_per_s": 7.675
+    },
+    "secondary": {
+     "resources": 0,
+     "bytes": 0,
+     "seconds": 0,
+     "mb_per_s": null
+    },
+    "processing": {
+     "bytes": 149576252,
+     "seconds": 3.48,
+     "mb_per_s": 42.982
+    }
+   },
+   "timings": {
+    "download_s": 23.75,
+    "processing_s": 3.48,
     "bytes_processed": 149576252,
     "outputs_s": 0.01
    }
