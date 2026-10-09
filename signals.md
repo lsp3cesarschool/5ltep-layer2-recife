@@ -6,10 +6,11 @@ Generated automatically by the publish job from the checked results; do not edit
 shown here: the record numbers are on the dashboard and in [`docs/data/rules/`](docs/data/rules/),
 and no value read from the portals is published. Times are UTC.
 
-- **Run:** [37936442232](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37936442232), finished 2026-10-09 13:23 UTC (github-actions)
+- **Run:** [37937376104](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37937376104), finished 2026-10-09 13:31 UTC (github-actions)
 - **Rules:** 12 (12 evaluated, 0 not evaluated)
 - **Sources:** 6 CKAN resources (6 available)
 - **Records flagged:** 117
+- **L2 pass rate:** 100.0% (checks without a signal / 941,257 checks in scope; one check per record and rule)
 
 Signal types: `mismatch` (the check failed), `key not found` (no matching record in the other
 source), `missing value`, `invalid value` (unreadable as the declared type), `ambiguous key` (more
@@ -36,9 +37,9 @@ than one match). Records outside a rule's scope (`where`) are not signals.
 
 | Resource | Role | Status | Size | Download | Used by |
 |---|---|---|---:|---:|---|
-| dados.recife.pe.gov.br › contratos › Termo Aditivo | primary | available | 6.0 MB | 4.6 s | amendment-end-before-start, amendment-without-contract |
-| dados.recife.pe.gov.br › contratos › Contratos | primary | available | 3.7 MB | 1.1 s | amendment-without-contract, contract-end-before-start |
-| dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245] | primary | available | 13.2 MB | 4.3 s | dengue-birth-after-notification, dengue-symptoms-after-notification |
-| dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental | primary | available | 40.5 MB | 3.4 s | enterprise-coordinates-outside-recife, licence-issued-before-request, licence-validity-before-issue |
-| dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234] | primary | available | 3.7 MB | 3.6 s | fatal-victims-above-victims, no-victim-accident-with-victims |
-| dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234] | primary | available | 82.6 MB | 10.8 s | weighing-end-before-start, weighing-net-weight-balance |
+| dados.recife.pe.gov.br › contratos › Termo Aditivo | primary | available | 6.0 MB | 3.9 s | amendment-end-before-start, amendment-without-contract |
+| dados.recife.pe.gov.br › contratos › Contratos | primary | available | 3.7 MB | 0.9 s | amendment-without-contract, contract-end-before-start |
+| dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245] | primary | available | 13.2 MB | 2.4 s | dengue-birth-after-notification, dengue-symptoms-after-notification |
+| dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental | primary | available | 40.5 MB | 5.9 s | enterprise-coordinates-outside-recife, licence-issued-before-request, licence-validity-before-issue |
+| dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234] | primary | available | 3.7 MB | 2.3 s | fatal-victims-above-victims, no-victim-accident-with-victims |
+| dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234] | primary | available | 82.6 MB | 7.0 s | weighing-end-before-start, weighing-net-weight-balance |

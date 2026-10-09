@@ -1,10 +1,10 @@
 {
  "rule": "fatal-victims-above-victims",
  "rule_version": "0.1.1",
- "evaluated_at": "2026-10-09T13:23:50+00:00",
- "run_id": "37936442232",
+ "evaluated_at": "2026-10-09T13:31:40+00:00",
+ "run_id": "37937376104",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37936442232",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37937376104",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "recife_acidentes": {
