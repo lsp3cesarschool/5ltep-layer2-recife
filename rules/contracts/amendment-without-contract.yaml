@@ -1,5 +1,5 @@
 schema_version: "1.0"
-rule_version: "0.1.0"
+rule_version: "0.1.1"
 origin: cross_reference
 
 description:
@@ -12,7 +12,7 @@ description:
   justification: >
     Todo aditivo pertence a um contrato; aditivo cujo contrato não aparece no extrato indica vínculo
     quebrado ou extratos de coberturas diferentes. Ausência no extrato não prova inexistência do
-    contrato no sistema de origem (mesma família de IB-17 no IBAMA). É sinal para revisão.
+    contrato no sistema de origem. É sinal para revisão.
   exceptions:
     - "Contratos antigos podem não constar do extrato publicado."
   examples:

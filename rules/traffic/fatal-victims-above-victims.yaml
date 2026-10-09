@@ -1,5 +1,5 @@
 schema_version: "1.0"
-rule_version: "0.1.0"
+rule_version: "0.1.1"
 origin: expert
 
 description:
@@ -8,7 +8,7 @@ description:
   title_translations:
     en: "Fatal victims above the total number of victims"
   text: >
-    Confere, em cada acidente de 2022 a 2024, se o número de vítimas fatais não passa do número de vítimas.
+    Confere, em cada acidente, se o número de vítimas fatais não passa do número de vítimas.
   justification: >
     Se o campo de vítimas inclui as fatais, as fatais não podem passar do total (ABNT NBR 10697, termos
     de sinistros de trânsito). Divergência indica erro de registro, ou que vítimas conta só feridos; o
@@ -16,7 +16,7 @@ description:
     cancelados ou duplicados ficam fora. É sinal para revisão.
   exceptions:
     - "Se 'vitimas' contar só feridos não fatais, a comparação não se sustenta."
-    - "Os anos anteriores a 2022 usam outros nomes de coluna e ficam fora desta regra."
+    - "Os anos com outros nomes de coluna ficam fora desta regra."
   examples:
     - case: "2 vítimas, 1 fatal"
       expected: "Conforme"

@@ -1,5 +1,5 @@
 schema_version: "1.0"
-rule_version: "0.1.0"
+rule_version: "0.1.1"
 origin: expert
 
 description:
@@ -10,7 +10,7 @@ description:
   text: >
     Confere se a data de validade da licença ambiental não é anterior à data de emissão.
   justification: >
-    A licença vale depois de emitida; validade anterior à emissão indica erro de data. Mesma família de IB-24 no IBAMA. É sinal para revisão.
+    A licença vale depois de emitida; validade anterior à emissão indica erro de data. É sinal para revisão.
   exceptions:
     - "Processos sem licença emitida ficam fora do escopo."
   examples:

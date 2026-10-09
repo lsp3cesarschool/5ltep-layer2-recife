@@ -1,5 +1,5 @@
 schema_version: "1.0"
-rule_version: "0.1.0"
+rule_version: "0.1.1"
 origin: expert
 
 description:
@@ -8,7 +8,7 @@ description:
   title_translations:
     en: "Accident recorded without victims but with victims counted"
   text: >
-    Sinaliza acidentes de 2022 a 2024 de natureza SEM VÍTIMA com número de vítimas maior que zero.
+    Sinaliza acidentes de natureza SEM VÍTIMA com número de vítimas maior que zero.
   justification: >
     A natureza do acidente e o número de vítimas descrevem o mesmo fato; "SEM VÍTIMA" com vítimas
     contadas indica erro de codificação de um dos campos. Chamados cancelados ou duplicados ficam fora.
