@@ -1,0 +1,157 @@
+{
+ "run_id": "37917109973",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "started_at": "2026-10-09T10:21:49+00:00",
+ "finished_at": "2026-10-09T10:22:17+00:00",
+ "engine": {
+  "commit": "2f42cad7ffadebc1aaa3d48a26913c052868df45",
+  "uncommitted_changes": false,
+  "python": "3.12.15",
+  "duckdb": "1.5.6"
+ },
+ "primary_portal": "https://dados.recife.pe.gov.br",
+ "download_speed": {
+  "primary": {
+   "resources": 6,
+   "bytes": 149576252,
+   "seconds": 21.04,
+   "mb_per_s": 7.109
+  },
+  "secondary": {
+   "resources": 0,
+   "bytes": 0,
+   "seconds": 0,
+   "mb_per_s": null
+  },
+  "processing": {
+   "bytes": 149576252,
+   "seconds": 2.58,
+   "mb_per_s": 57.975
+  }
+ },
+ "rules": [
+  {
+   "id": "amendment-end-before-start",
+   "rule_version": "0.1.0",
+   "file": "contracts/amendment-end-before-start.yaml",
+   "sha256": "524ace6d3ef9d0d5ae04e27419794bdeaee12b97e3bca12618983328e934ca6a"
+  },
+  {
+   "id": "amendment-without-contract",
+   "rule_version": "0.1.0",
+   "file": "contracts/amendment-without-contract.yaml",
+   "sha256": "80a5a173e1ce35593e4012b3925e5ead016e8807b94ae304477051fca5aaa104"
+  },
+  {
+   "id": "contract-end-before-start",
+   "rule_version": "0.1.0",
+   "file": "contracts/contract-end-before-start.yaml",
+   "sha256": "22dda85e5fec38de8bedf2cd9c200efbc25cda74e75ed44a696012bce6763946"
+  },
+  {
+   "id": "dengue-birth-after-notification",
+   "rule_version": "0.2.0",
+   "file": "health/dengue-birth-after-notification.yaml",
+   "sha256": "22281cecdcfcca28fb31ae1a18ac0fc5023cedb75198dc6dcee413f48133e830"
+  },
+  {
+   "id": "dengue-symptoms-after-notification",
+   "rule_version": "0.2.0",
+   "file": "health/dengue-symptoms-after-notification.yaml",
+   "sha256": "a6acc97674c2b59b4e4fa53bb10cc0268e56d01eff16a630a82a3234c32b35fd"
+  },
+  {
+   "id": "enterprise-coordinates-outside-recife",
+   "rule_version": "0.1.0",
+   "file": "licensing/enterprise-coordinates-outside-recife.yaml",
+   "sha256": "f2c948ec4d915b99db2f1ea3895ee1f36b4f160fd5f716e0b83750feb2ba0ec7"
+  },
+  {
+   "id": "licence-issued-before-request",
+   "rule_version": "0.1.0",
+   "file": "licensing/licence-issued-before-request.yaml",
+   "sha256": "0e9a802b102e38431f946a13098c28a0381fa6a65c6b5d4fd474845045d6559a"
+  },
+  {
+   "id": "licence-validity-before-issue",
+   "rule_version": "0.1.0",
+   "file": "licensing/licence-validity-before-issue.yaml",
+   "sha256": "703426beeeca5f7406f07add61186c933aa76a30f8a334672bd2a324ee2d917b"
+  },
+  {
+   "id": "fatal-victims-above-victims",
+   "rule_version": "0.1.0",
+   "file": "traffic/fatal-victims-above-victims.yaml",
+   "sha256": "518606e0a080c5e47c3c0b5a389de8252c781e7e440ee2912164de666243ecf5"
+  },
+  {
+   "id": "no-victim-accident-with-victims",
+   "rule_version": "0.1.0",
+   "file": "traffic/no-victim-accident-with-victims.yaml",
+   "sha256": "779feea657c2cc92b3d2f8bcf52b0dbf5f9af9d0c6b9052e2a6c812c8f551aa1"
+  },
+  {
+   "id": "weighing-end-before-start",
+   "rule_version": "0.1.0",
+   "file": "waste/weighing-end-before-start.yaml",
+   "sha256": "5eb1a1300e53155b2765ff6c4a8fd2045cb5bd65748bb47f8fe9b0104cbc9951"
+  },
+  {
+   "id": "weighing-net-weight-balance",
+   "rule_version": "0.1.0",
+   "file": "waste/weighing-net-weight-balance.yaml",
+   "sha256": "579ba77245229338fceed02a7cfea0d10b2b8194191c4491bbf9899ab7e264c8"
+  }
+ ],
+ "sources": [
+  {
+   "label": "dados.recife.pe.gov.br › contratos › Termo Aditivo",
+   "status": "ok",
+   "resource_id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
+   "metadata_modified": "2026-03-02T14:29:15.423617",
+   "bytes": 5984530,
+   "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550"
+  },
+  {
+   "label": "dados.recife.pe.gov.br › contratos › Contratos",
+   "status": "ok",
+   "resource_id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+   "metadata_modified": "2026-03-02T14:29:11.081156",
+   "bytes": 3675647,
+   "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44"
+  },
+  {
+   "label": "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]",
+   "status": "ok",
+   "resource_id": null,
+   "metadata_modified": "2026-03-07T01:10:23.749405",
+   "bytes": 13170277,
+   "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf"
+  },
+  {
+   "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
+   "status": "ok",
+   "resource_id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
+   "metadata_modified": "2026-06-17T11:58:42.626049",
+   "bytes": 40534357,
+   "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2"
+  },
+  {
+   "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]",
+   "status": "ok",
+   "resource_id": null,
+   "metadata_modified": "2026-03-02T13:44:48.165036",
+   "bytes": 3657092,
+   "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79"
+  },
+  {
+   "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]",
+   "status": "ok",
+   "resource_id": null,
+   "metadata_modified": "2026-03-04T13:09:54.743931",
+   "bytes": 82554349,
+   "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095"
+  }
+ ]
+}

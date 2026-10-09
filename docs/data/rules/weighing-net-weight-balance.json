@@ -1,0 +1,80 @@
+{
+ "rule": "weighing-net-weight-balance",
+ "rule_version": "0.1.0",
+ "evaluated_at": "2026-10-09T10:22:17+00:00",
+ "run_id": "37917109973",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
+ "sources": {
+  "recife_pesagem": {
+   "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]",
+   "file": null,
+   "files": [
+    "pesagem-de-residuos-2012.csv",
+    "pesagem-de-residuos-2013.csv",
+    "pesagem-de-residuos-2014.csv"
+   ],
+   "url": null,
+   "archive_members": null,
+   "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
+   "records": 381128
+  }
+ },
+ "counts": {
+  "match": 381127,
+  "mismatch": 1,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 0
+ },
+ "total": 381128,
+ "records": {
+  "mismatch": {
+   "pesagem-de-residuos-2013.csv": [
+    809
+   ]
+  }
+ },
+ "members": [
+  {
+   "name": "pesagem-de-residuos-2012.csv",
+   "records": 113523
+  },
+  {
+   "name": "pesagem-de-residuos-2013.csv",
+   "records": 130952
+  },
+  {
+   "name": "pesagem-de-residuos-2014.csv",
+   "records": 136653
+  }
+ ],
+ "by_member": {
+  "pesagem-de-residuos-2012.csv": {
+   "match": 113523
+  },
+  "pesagem-de-residuos-2013.csv": {
+   "match": 130951,
+   "mismatch": 1
+  },
+  "pesagem-de-residuos-2014.csv": {
+   "match": 136653
+  }
+ },
+ "by_period": {
+  "2012": {
+   "match": 113523
+  },
+  "2013": {
+   "match": 130951,
+   "mismatch": 1
+  },
+  "2014": {
+   "match": 136653
+  }
+ },
+ "timeline": "recife_pesagem.PES_DATAINI"
+}

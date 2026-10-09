@@ -1,0 +1,71 @@
+{
+ "run_id": "37917109973",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "id": "contract-end-before-start",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "contracts/contract-end-before-start.yaml",
+ "folder": "contracts",
+ "language": "pt-BR",
+ "title": "Fim da vigência do contrato anterior ao início",
+ "title_translations": {
+  "en": "Contract ending before it starts"
+ },
+ "text": "Confere se a data de fim da vigência de cada contrato não é anterior à data de início.\n",
+ "justification": "A vigência termina depois de começar; fim antes do início indica erro de data. Datas no formato do recurso (2023/05/01 00:00:00.00). É sinal para revisão.\n",
+ "exceptions": [
+  "Contratos sem data de fim ficam fora do escopo."
+ ],
+ "template": "temporal-order",
+ "evaluated_source": "recife_contratos",
+ "timeline": "recife_contratos.datainiciovigencia",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "recife_contratos",
+   "label": "dados.recife.pe.gov.br › contratos › Contratos"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:14+00:00",
+ "total": 7912,
+ "counts": {
+  "match": 7899,
+  "mismatch": 6,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 7
+ },
+ "signals": 6,
+ "signals_by_outcome": {
+  "mismatch": 6,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/contract-end-before-start.json",
+ "sources": {
+  "recife_contratos": {
+   "resource": "dados.recife.pe.gov.br › contratos › Contratos",
+   "fetch_status": "ok",
+   "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/a72e7175-8fcd-40bd-82ef-056a621a6165/download/contratos.csv",
+   "file": "contratos.csv",
+   "files": null,
+   "archive_members": null,
+   "records": 7912,
+   "members": [
+    {
+     "name": "contratos.csv",
+     "records": 7912
+    }
+   ]
+  }
+ }
+}

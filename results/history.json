@@ -1,0 +1,210 @@
+[
+ {
+  "run_id": "37917109973",
+  "environment": "github-actions",
+  "at": "2026-10-09T10:22:17+00:00",
+  "rules": {
+   "amendment-end-before-start": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 13390,
+    "counts": {
+     "match": 11835,
+     "mismatch": 40,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 1515
+    }
+   },
+   "amendment-without-contract": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 13390,
+    "counts": {
+     "match": 13390,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 0
+    }
+   },
+   "contract-end-before-start": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 7912,
+    "counts": {
+     "match": 7899,
+     "mismatch": 6,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 7
+    }
+   },
+   "dengue-birth-after-notification": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 22641,
+    "counts": {
+     "match": 22412,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 229
+    }
+   },
+   "dengue-symptoms-after-notification": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 22641,
+    "counts": {
+     "match": 22611,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 30
+    }
+   },
+   "enterprise-coordinates-outside-recife": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 49924,
+    "counts": {
+     "match": 43398,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 6526
+    }
+   },
+   "licence-issued-before-request": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 49924,
+    "counts": {
+     "match": 17793,
+     "mismatch": 15,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 32116
+    }
+   },
+   "licence-validity-before-issue": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 49924,
+    "counts": {
+     "match": 17808,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 32116
+    }
+   },
+   "fatal-victims-above-victims": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 12016,
+    "counts": {
+     "match": 10842,
+     "mismatch": 55,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 1119
+    }
+   },
+   "no-victim-accident-with-victims": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 12016,
+    "counts": {
+     "match": 10897,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 1119
+    }
+   },
+   "weighing-end-before-start": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 381128,
+    "counts": {
+     "match": 381128,
+     "mismatch": 0,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 0
+    }
+   },
+   "weighing-net-weight-balance": {
+    "status": "evaluated",
+    "reason_code": null,
+    "total": 381128,
+    "counts": {
+     "match": 381127,
+     "mismatch": 1,
+     "key_not_found": 0,
+     "missing_value": 0,
+     "invalid_value": 0,
+     "ambiguous_key": 0,
+     "out_of_scope": 0
+    }
+   }
+  },
+  "sources": {
+   "dados.recife.pe.gov.br › contratos › Termo Aditivo": "ok",
+   "dados.recife.pe.gov.br › contratos › Contratos": "ok",
+   "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]": "ok",
+   "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental": "ok",
+   "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]": "ok",
+   "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]": "ok"
+  },
+  "download_speed": {
+   "primary": {
+    "resources": 6,
+    "bytes": 149576252,
+    "seconds": 21.04,
+    "mb_per_s": 7.109
+   },
+   "secondary": {
+    "resources": 0,
+    "bytes": 0,
+    "seconds": 0,
+    "mb_per_s": null
+   },
+   "processing": {
+    "bytes": 149576252,
+    "seconds": 2.58,
+    "mb_per_s": 57.975
+   }
+  },
+  "timings": {
+   "download_s": 25.04,
+   "processing_s": 2.58,
+   "bytes_processed": 149576252,
+   "outputs_s": 0.01
+  }
+ }
+]

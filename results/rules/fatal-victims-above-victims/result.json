@@ -1,0 +1,84 @@
+{
+ "run_id": "37917109973",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "id": "fatal-victims-above-victims",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "traffic/fatal-victims-above-victims.yaml",
+ "folder": "traffic",
+ "language": "pt-BR",
+ "title": "Vítimas fatais acima do total de vítimas",
+ "title_translations": {
+  "en": "Fatal victims above the total number of victims"
+ },
+ "text": "Confere, em cada acidente de 2022 a 2024, se o número de vítimas fatais não passa do número de vítimas.\n",
+ "justification": "Se o campo de vítimas inclui as fatais, as fatais não podem passar do total (ABNT NBR 10697, termos de sinistros de trânsito). Divergência indica erro de registro, ou que vítimas conta só feridos; o dicionário do recurso precisa confirmar. Contagens publicadas como número com vírgula (1,0). Chamados cancelados ou duplicados ficam fora. É sinal para revisão.\n",
+ "exceptions": [
+  "Se 'vitimas' contar só feridos não fatais, a comparação não se sustenta.",
+  "Os anos anteriores a 2022 usam outros nomes de coluna e ficam fora desta regra."
+ ],
+ "template": "field-comparison",
+ "evaluated_source": "recife_acidentes",
+ "timeline": "recife_acidentes.data",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "recife_acidentes",
+   "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:15+00:00",
+ "total": 12016,
+ "counts": {
+  "match": 10842,
+  "mismatch": 55,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 1119
+ },
+ "signals": 55,
+ "signals_by_outcome": {
+  "mismatch": 55,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/fatal-victims-above-victims.json",
+ "sources": {
+  "recife_acidentes": {
+   "resource": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]",
+   "fetch_status": "ok",
+   "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
+   "url": null,
+   "file": null,
+   "files": [
+    "acidentes-de-transito-2022.csv",
+    "acidentes-de-transito-2023.csv",
+    "acidentes-de-transito-2024.csv"
+   ],
+   "archive_members": null,
+   "records": 12016,
+   "members": [
+    {
+     "name": "acidentes-de-transito-2022.csv",
+     "records": 2669
+    },
+    {
+     "name": "acidentes-de-transito-2023.csv",
+     "records": 4032
+    },
+    {
+     "name": "acidentes-de-transito-2024.csv",
+     "records": 5315
+    }
+   ]
+  }
+ }
+}

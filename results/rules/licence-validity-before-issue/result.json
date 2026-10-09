@@ -1,0 +1,71 @@
+{
+ "run_id": "37917109973",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "id": "licence-validity-before-issue",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "licensing/licence-validity-before-issue.yaml",
+ "folder": "licensing",
+ "language": "pt-BR",
+ "title": "Validade da licença municipal anterior à emissão",
+ "title_translations": {
+  "en": "Municipal licence valid until a date before it was issued"
+ },
+ "text": "Confere se a data de validade da licença ambiental não é anterior à data de emissão.\n",
+ "justification": "A licença vale depois de emitida; validade anterior à emissão indica erro de data. Mesma família de IB-24 no IBAMA. É sinal para revisão.\n",
+ "exceptions": [
+  "Processos sem licença emitida ficam fora do escopo."
+ ],
+ "template": "temporal-order",
+ "evaluated_source": "recife_licencas",
+ "timeline": "recife_licencas.data_emissao_licenca",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "recife_licencas",
+   "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:15+00:00",
+ "total": 49924,
+ "counts": {
+  "match": 17808,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 32116
+ },
+ "signals": 0,
+ "signals_by_outcome": {
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/licence-validity-before-issue.json",
+ "sources": {
+  "recife_licencas": {
+   "resource": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
+   "fetch_status": "ok",
+   "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2",
+   "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
+   "file": "licenciamento_ambiental.csv",
+   "files": null,
+   "archive_members": null,
+   "records": 49924,
+   "members": [
+    {
+     "name": "licenciamento_ambiental.csv",
+     "records": 49924
+    }
+   ]
+  }
+ }
+}

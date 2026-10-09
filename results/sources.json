@@ -1,0 +1,357 @@
+{
+ "run_id": "37917109973",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37917109973",
+ "checked_at": "2026-10-09T10:22:17+00:00",
+ "sources": [
+  {
+   "portal": "https://dados.recife.pe.gov.br",
+   "dataset_name": "contratos",
+   "resource_name": "Termo Aditivo",
+   "resource_format": "CSV",
+   "label": "dados.recife.pe.gov.br › contratos › Termo Aditivo",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "amendment-end-before-start",
+    "amendment-without-contract"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 1.81
+   },
+   "dataset": {
+    "title": "Contratos , Aditivos e Apostilamentos",
+    "organization": "Secretaria de Administração e Gestão de Pessoas",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-03-02T14:29:17.688418"
+   },
+   "resource": {
+    "id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
+    "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/145f5c46-10ea-4c02-ba26-21333ded8ae9/download/termo-aditivo.csv",
+    "name": "Termo Aditivo",
+    "metadata_modified": "2026-03-02T14:29:15.423617",
+    "last_modified": "2026-03-02T14:29:11.065718",
+    "size_declared": 5984530
+   },
+   "download": {
+    "http_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "content_type": "application/octet-stream",
+    "served_by": "ckan-storage-download.app.emprel.gov.br",
+    "bytes": 5984530,
+    "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
+    "seconds": 4.15,
+    "mb_per_s": 1.444
+   },
+   "files": [
+    {
+     "file": "termo-aditivo.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/145f5c46-10ea-4c02-ba26-21333ded8ae9/download/termo-aditivo.csv",
+     "resource_id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
+     "bytes": 5984530,
+     "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.recife.pe.gov.br",
+   "dataset_name": "contratos",
+   "resource_name": "Contratos",
+   "resource_format": "CSV",
+   "label": "dados.recife.pe.gov.br › contratos › Contratos",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "amendment-without-contract",
+    "contract-end-before-start"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.27
+   },
+   "dataset": {
+    "title": "Contratos , Aditivos e Apostilamentos",
+    "organization": "Secretaria de Administração e Gestão de Pessoas",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-03-02T14:29:17.688418"
+   },
+   "resource": {
+    "id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+    "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/a72e7175-8fcd-40bd-82ef-056a621a6165/download/contratos.csv",
+    "name": "Contratos",
+    "metadata_modified": "2026-03-02T14:29:11.081156",
+    "last_modified": "2026-03-02T14:28:58.147563",
+    "size_declared": 3675647
+   },
+   "download": {
+    "http_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "content_type": "application/octet-stream",
+    "served_by": "ckan-storage-download.app.emprel.gov.br",
+    "bytes": 3675647,
+    "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
+    "seconds": 1.1,
+    "mb_per_s": 3.35
+   },
+   "files": [
+    {
+     "file": "contratos.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/a72e7175-8fcd-40bd-82ef-056a621a6165/download/contratos.csv",
+     "resource_id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+     "bytes": 3675647,
+     "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.recife.pe.gov.br",
+   "dataset_name": "casos-de-dengue-zika-e-chikungunya",
+   "resource_name": "Casos de Dengue 202[245]",
+   "resource_format": "CSV",
+   "label": "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "dengue-birth-after-notification",
+    "dengue-symptoms-after-notification"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.67
+   },
+   "dataset": {
+    "title": "Casos de Dengue, Zika e Chikungunya",
+    "organization": "Secretaria de Saúde",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-05-20T10:28:07.518396"
+   },
+   "resource": {
+    "count": 3,
+    "names": [
+     " Casos de Dengue 2022",
+     "Casos de Dengue 2024",
+     "Casos de Dengue 2025"
+    ],
+    "metadata_modified": "2026-03-07T01:10:23.749405"
+   },
+   "download": {
+    "http_status": 200,
+    "bytes": 13170277,
+    "seconds": 3.05,
+    "mb_per_s": 4.311,
+    "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf",
+    "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
+   },
+   "files": [
+    {
+     "file": "-casos-de-dengue-2022.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/a727370f-b948-45f2-9eab-63de525e610e/download/-casos-de-dengue-2022.csv",
+     "resource_id": "a727370f-b948-45f2-9eab-63de525e610e",
+     "bytes": 1675085,
+     "sha256": "1d8846e400cd397c1ab659fdc20da865d2fd42015045f55dbfedfad7f954c09b"
+    },
+    {
+     "file": "casos-de-dengue-2024.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/7755fe11-48f0-4797-ac5a-78d6da0fc8d9/download/casos-de-dengue-2024.csv",
+     "resource_id": "7755fe11-48f0-4797-ac5a-78d6da0fc8d9",
+     "bytes": 6117863,
+     "sha256": "44f5d1952d138b00d9bdacccbb3e913133c1f18ec7cd79c09dba0c98d040b4b5"
+    },
+    {
+     "file": "casos-de-dengue-2025.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/45a675e2-d387-4019-bb6e-4b915b74b1bf/download/casos-de-dengue-2025.csv",
+     "resource_id": "45a675e2-d387-4019-bb6e-4b915b74b1bf",
+     "bytes": 5377329,
+     "sha256": "b723a5f2186567e328377b83e733b2d88adb9f2d7d2e47749c91d3f8ce5fd5a9"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.recife.pe.gov.br",
+   "dataset_name": "licenciamento-ambiental",
+   "resource_name": "Licenciamento Ambiental",
+   "resource_format": "CSV",
+   "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "enterprise-coordinates-outside-recife",
+    "licence-issued-before-request",
+    "licence-validity-before-issue"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.28
+   },
+   "dataset": {
+    "title": "Licenciamento Ambiental",
+    "organization": "Secretaria de Meio Ambiente e Sustentabilidade",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-06-17T11:58:42.548491"
+   },
+   "resource": {
+    "id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
+    "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
+    "name": "Licenciamento Ambiental",
+    "metadata_modified": "2026-06-17T11:58:42.626049",
+    "last_modified": "2026-06-17T11:58:42.491963",
+    "size_declared": 40534357
+   },
+   "download": {
+    "http_status": 200,
+    "etag": null,
+    "last_modified": null,
+    "content_type": "application/octet-stream",
+    "served_by": "ckan-storage-download.app.emprel.gov.br",
+    "bytes": 40534357,
+    "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2",
+    "seconds": 3.26,
+    "mb_per_s": 12.446
+   },
+   "files": [
+    {
+     "file": "licenciamento_ambiental.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
+     "resource_id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
+     "bytes": 40534357,
+     "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.recife.pe.gov.br",
+   "dataset_name": "acidentes-de-transito-com-e-sem-vitimas",
+   "resource_name": "Acidentes de Trânsito 202[234]",
+   "resource_format": "CSV",
+   "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "fatal-victims-above-victims",
+    "no-victim-accident-with-victims"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.67
+   },
+   "dataset": {
+    "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
+    "organization": "Autarquia de Trânsito e Transporte Urbano do Recife - CTTU",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-03-02T13:45:27.485944"
+   },
+   "resource": {
+    "count": 3,
+    "names": [
+     "Acidentes de Trânsito 2022",
+     "Acidentes de Trânsito 2023",
+     "Acidentes de Trânsito 2024"
+    ],
+    "metadata_modified": "2026-03-02T13:44:48.165036"
+   },
+   "download": {
+    "http_status": 200,
+    "bytes": 3657092,
+    "seconds": 2.88,
+    "mb_per_s": 1.271,
+    "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
+    "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
+   },
+   "files": [
+    {
+     "file": "acidentes-de-transito-2022.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/c2281788-2e8c-472c-8812-67c4f85e9272/download/acidentes-de-transito-2022.csv",
+     "resource_id": "c2281788-2e8c-472c-8812-67c4f85e9272",
+     "bytes": 993185,
+     "sha256": "b63341fc83ee98065f95498b75a8f118cd66aadbfdc8274a80842bca14c1b9b9"
+    },
+    {
+     "file": "acidentes-de-transito-2023.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/dbb9165a-7539-4fdd-943a-acffe12df3e0/download/acidentes-de-transito-2023.csv",
+     "resource_id": "dbb9165a-7539-4fdd-943a-acffe12df3e0",
+     "bytes": 1146672,
+     "sha256": "b7b799697908ea894e9c22709155d54586dbf77460ff1c123795db9032687846"
+    },
+    {
+     "file": "acidentes-de-transito-2024.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/87ac4237-f5f9-44d2-bcf1-927aaa0a2d31/download/acidentes-de-transito-2024.csv",
+     "resource_id": "87ac4237-f5f9-44d2-bcf1-927aaa0a2d31",
+     "bytes": 1517235,
+     "sha256": "375766319e81ba147f40d013c9706abfc91f9017ffa23277533cd23bf0e0d6bd"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.recife.pe.gov.br",
+   "dataset_name": "pesagem-de-coletas-de-residuos",
+   "resource_name": "Pesagem de Resíduos - 201[234]",
+   "resource_format": "CSV",
+   "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "weighing-end-before-start",
+    "weighing-net-weight-balance"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.3
+   },
+   "dataset": {
+    "title": "Pesagem de Coletas de Resíduos",
+    "organization": "Empresa de Manutenção e Limpeza Urbana - EMLURB",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-03-04T13:10:34.128868"
+   },
+   "resource": {
+    "count": 3,
+    "names": [
+     "Pesagem de Resíduos - 2012",
+     "Pesagem de Resíduos - 2013",
+     "Pesagem de Resíduos - 2014"
+    ],
+    "metadata_modified": "2026-03-04T13:09:54.743931"
+   },
+   "download": {
+    "http_status": 200,
+    "bytes": 82554349,
+    "seconds": 6.6,
+    "mb_per_s": 12.507,
+    "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
+    "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
+   },
+   "files": [
+    {
+     "file": "pesagem-de-residuos-2012.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/1f8290e6-875c-4407-a390-17dd70be17e5/resource/1c6901ad-863b-4ee7-9cc1-4b0afb6c6458/download/pesagem-de-residuos-2012.csv",
+     "resource_id": "1c6901ad-863b-4ee7-9cc1-4b0afb6c6458",
+     "bytes": 24710980,
+     "sha256": "9e16b405caec40ab11cded5331ab94b1cfe757877db7adac5b381bee20673a5f"
+    },
+    {
+     "file": "pesagem-de-residuos-2013.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/1f8290e6-875c-4407-a390-17dd70be17e5/resource/97622c28-79dd-4273-89a6-9958bf398ade/download/pesagem-de-residuos-2013.csv",
+     "resource_id": "97622c28-79dd-4273-89a6-9958bf398ade",
+     "bytes": 28281082,
+     "sha256": "85c161d081bb479bd39582bce6861fc85ceaecd6f46ec3840b8241f18d1bc25f"
+    },
+    {
+     "file": "pesagem-de-residuos-2014.csv",
+     "url": "https://dados.recife.pe.gov.br:443/dataset/1f8290e6-875c-4407-a390-17dd70be17e5/resource/bf281fbc-167b-4602-994b-30772b11987f/download/pesagem-de-residuos-2014.csv",
+     "resource_id": "bf281fbc-167b-4602-994b-30772b11987f",
+     "bytes": 29562287,
+     "sha256": "1fd71c6ebccfb45b2b9f731320bc3d2d954c31187e360eb7c9d28f847cff19f6"
+    }
+   ]
+  }
+ ]
+}
