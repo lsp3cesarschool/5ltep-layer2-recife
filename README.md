@@ -13,6 +13,7 @@ the data.
 | Resource | What you find there |
 |---|---|
 | 📊 **Dashboard** | [lsp3cesarschool.github.io/5ltep-layer2-recife](https://lsp3cesarschool.github.io/5ltep-layer2-recife/?lang=en): each rule with its signals, charts and record numbers; source health, download and processing speed, history and provenance |
+| 📄 **Latest results (plain text)** | [`signals.md`](signals.md): every rule with its signal count and the health of each source, rebuilt by each run, readable without JavaScript |
 | 📏 **Rules** | [`rules/`](rules/): one check per file, in plain YAML |
 | 📁 **Results** | [`results/`](results/) and [`docs/data/`](docs/data/): what each run writes (counts, record numbers, hashes) |
 | 🏛️ **Main instance** | [5ltep-layer2](https://github.com/lsp3cesarschool/5ltep-layer2) (IBAMA): the full documentation and the rule manual; [dashboard](https://lsp3cesarschool.github.io/5ltep-layer2/?lang=en) |
@@ -103,6 +104,7 @@ src/               loader, validator, templates, fetch, engine, outputs, accept
 schema/            JSON Schema of the rule format
 rules/             one file per rule, in subfolders
 portal.json        the portal of this instance
+signals.md         latest results in plain text (written by each run)
 docs/              dashboard (data/ is written by the runs)
 results/           results of the runs
 tests/             automated tests

@@ -13,6 +13,7 @@ revisão, nunca um veredito sobre os dados.
 | Recurso | O que há lá |
 |---|---|
 | 📊 **Dashboard** | [lsp3cesarschool.github.io/5ltep-layer2-recife](https://lsp3cesarschool.github.io/5ltep-layer2-recife/?lang=pt): cada regra com seus sinais, gráficos e números de registro; saúde das fontes, velocidade de download e de processamento, histórico e proveniência |
+| 📄 **Resultados recentes (texto simples)** | [`signals.md`](signals.md): cada regra com sua contagem de sinais e a saúde de cada fonte, refeito a cada rodada, legível sem JavaScript |
 | 📏 **Regras** | [`rules/`](rules/): uma verificação por arquivo, em YAML legível |
 | 📁 **Resultados** | [`results/`](results/) e [`docs/data/`](docs/data/): o que cada rodada grava (contagens, números de registro, hashes) |
 | 🏛️ **Instância principal** | [5ltep-layer2](https://github.com/lsp3cesarschool/5ltep-layer2) (IBAMA): a documentação completa e o manual de regras; [dashboard](https://lsp3cesarschool.github.io/5ltep-layer2/?lang=pt) |
@@ -103,6 +104,7 @@ src/               leitor, validador, modelos, download, motor, saídas, aceite
 schema/            JSON Schema do formato de regra
 rules/             um arquivo por regra, em subpastas
 portal.json        o portal desta instância
+signals.md         resultados recentes em texto simples (gravado a cada rodada)
 docs/              dashboard (data/ é gravado pelas rodadas)
 results/           resultados das rodadas
 tests/             testes automáticos
