@@ -1,0 +1,40 @@
+schema_version: "1.0"
+rule_version: "0.2.0"
+exposure: counts
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Primeiros sintomas posteriores à notificação de dengue"
+  title_translations:
+    en: "Dengue first symptoms dated after the notification"
+  text: >
+    Confere, nas notificações de dengue de 2022, 2024 e 2025, se a data dos primeiros sintomas não é posterior à data da notificação.
+  justification: >
+    O dicionário SINAN (Notificação Individual v5) exige data dos primeiros sintomas igual ou anterior à notificação; a ordem inversa indica erro de data. Dados de saúde: esta regra publica só contagens e gráficos (exposure: counts), nunca números
+    de registro, e lê só as datas que compara. Os outros anos publicam outro cabeçalho ou separador e
+    ficam fora. É sinal para revisão, sem nenhuma inferência sobre pessoas.
+  exceptions:
+    - "Notificações sem a data comparada ficam fora do escopo."
+  examples:
+    - case: "Notificação em 10/03/2024 e data comparada em 05/03/2024"
+      expected: "Conforme"
+    - case: "Notificação em 10/03/2024 e data comparada em 20/03/2024"
+      expected: "Sinalizar"
+
+sources:
+  recife_dengue:
+    portal: https://dados.recife.pe.gov.br
+    dataset: casos-de-dengue-zika-e-chikungunya
+    resource: {name: "Casos de Dengue 202[245]", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      DT_SIN_PRI: {meaning: "Data dos primeiros sintomas", type: date, format: ["%d/%m/%Y", "%Y-%m-%d"]}
+      DT_NOTIFIC: {meaning: "Data da notificação", type: date, format: ["%d/%m/%Y", "%Y-%m-%d"]}
+
+check:
+  template: temporal-order
+  timeline: recife_dengue.DT_NOTIFIC
+  sequence: [recife_dengue.DT_SIN_PRI, recife_dengue.DT_NOTIFIC]
+  where:
+    - {column: recife_dengue.DT_SIN_PRI, empty: false}

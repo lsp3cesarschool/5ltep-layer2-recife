@@ -1,0 +1,871 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lsp3cesarschool.github.io/5ltep-layer2/schema/rule-v1.schema.json",
+  "title": "5L-TEP Layer 2 rule, format 1.0",
+  "description": "One check per file in rules/ (any subfolder); the file name without .yaml is the rule's identifier (lowercase letters, digits and hyphens). `description` is for people; `sources` and `check` are for the engine. Every source is a CKAN resource. One schema for every rule. `python main.py validate` also checks that each source.column used by `check` is declared in `sources`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "rule_version",
+    "origin",
+    "description",
+    "sources",
+    "check"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "description": "Version of this format."
+    },
+    "rule_version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$",
+      "description": "Version of this rule (MAJOR.MINOR.PATCH), quoted; schema_version is the version of the format."
+    },
+    "origin": {
+      "enum": [
+        "expert",
+        "cross_reference",
+        "ai"
+      ],
+      "description": "Who proposed the check. It does not prove validity."
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "language",
+        "title",
+        "text",
+        "justification",
+        "examples"
+      ],
+      "properties": {
+        "language": {
+          "type": "string",
+          "pattern": "^[A-Za-z]{2,3}(-[A-Za-z]{4})?(-([A-Za-z]{2}|[0-9]{3}))?$",
+          "description": "BCP 47 tag of the texts, e.g. pt-BR, en, es."
+        },
+        "title": {
+          "$ref": "#/$defs/text",
+          "maxLength": 200
+        },
+        "title_translations": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[A-Za-z]{2,3}(-[A-Za-z]{4})?(-([A-Za-z]{2}|[0-9]{3}))?$"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/text",
+            "maxLength": 200
+          },
+          "description": "Optional: the title in other languages, keyed by BCP 47 tag, e.g. en. The dashboard shows the title in its own language when there is one, else `title`."
+        },
+        "text": {
+          "$ref": "#/$defs/text"
+        },
+        "justification": {
+          "$ref": "#/$defs/text"
+        },
+        "exceptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "examples": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "case",
+              "expected"
+            ],
+            "properties": {
+              "case": {
+                "$ref": "#/$defs/text"
+              },
+              "expected": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9_]{0,63}$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "template"
+      ],
+      "properties": {
+        "template": {
+          "enum": [
+            "lookup-equals",
+            "lookup-exists",
+            "temporal-order",
+            "field-comparison",
+            "flag-when"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "template": {
+                "const": "lookup-equals"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/lookup_equals"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "template": {
+                "const": "lookup-exists"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/lookup_exists"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "template": {
+                "const": "temporal-order"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/temporal_order"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "template": {
+                "const": "field-comparison"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/field_comparison"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "template": {
+                "const": "flag-when"
+              }
+            }
+          },
+          "then": {
+            "$ref": "#/$defs/flag_when"
+          }
+        }
+      ]
+    },
+    "exposure": {
+      "enum": [
+        "records",
+        "counts"
+      ],
+      "description": "records (default): signals are published as counts and record numbers; counts: only counts and charts, never record numbers (health, education and other sensitive data)."
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "column_ref": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]{0,63}\\..+$",
+      "description": "source.column, e.g. ibama_autos.COD_MUNICIPIO. The column name is copied exactly."
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from",
+        "to"
+      ],
+      "properties": {
+        "from": {
+          "$ref": "#/$defs/column_ref"
+        },
+        "to": {
+          "$ref": "#/$defs/column_ref"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "portal",
+        "dataset",
+        "resource",
+        "file",
+        "columns"
+      ],
+      "properties": {
+        "portal": {
+          "type": "string",
+          "pattern": "^https://[^/\\s]+(/[^\\s]*)?$",
+          "description": "Address of the CKAN portal."
+        },
+        "dataset": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,100}$",
+          "description": "Exact CKAN name or id of the dataset."
+        },
+        "resource": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "format"
+          ],
+          "properties": {
+            "name": {
+              "$ref": "#/$defs/text",
+              "description": "Exact resource name in CKAN."
+            },
+            "format": {
+              "$ref": "#/$defs/text",
+              "description": "Format declared in CKAN, e.g. CSV."
+            }
+          }
+        },
+        "archive": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "members"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "zip"
+              ]
+            },
+            "members": {
+              "type": "string",
+              "pattern": "^[^\\s/\\\\][^/\\\\]*(/[^/\\\\]+)*$",
+              "description": "File inside the archive, or a pattern with * and ? for several files (stacked)."
+            }
+          }
+        },
+        "file": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "format",
+            "encoding",
+            "delimiter"
+          ],
+          "properties": {
+            "format": {
+              "enum": [
+                "csv"
+              ]
+            },
+            "encoding": {
+              "enum": [
+                "utf-8",
+                "latin-1",
+                "cp1252"
+              ]
+            },
+            "delimiter": {
+              "enum": [
+                ";",
+                ",",
+                "\t",
+                "|"
+              ]
+            }
+          }
+        },
+        "columns": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/text"
+              },
+              {
+                "$ref": "#/$defs/column_spec"
+              }
+            ]
+          },
+          "description": "column: meaning, or {meaning, type, format/decimal} for dates and numbers. Only declared columns are read."
+        }
+      }
+    },
+    "lookup_equals": {
+      "description": "For each record of the `from` source, find the key in the `to` source and compare one value.",
+      "required": [
+        "template",
+        "key",
+        "compare"
+      ],
+      "properties": {
+        "template": {
+          "const": "lookup-equals"
+        },
+        "key": {
+          "$ref": "#/$defs/key"
+        },
+        "compare": {
+          "$ref": "#/$defs/pair"
+        },
+        "where": {
+          "$ref": "#/$defs/where"
+        },
+        "timeline": {
+          "$ref": "#/$defs/column_ref",
+          "description": "Optional: a date column of the evaluated source; the dashboard charts the outcomes per year of it."
+        }
+      },
+      "additionalProperties": false
+    },
+    "column_spec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "meaning",
+        "type"
+      ],
+      "properties": {
+        "meaning": {
+          "$ref": "#/$defs/text"
+        },
+        "type": {
+          "enum": [
+            "text",
+            "date",
+            "datetime",
+            "number"
+          ]
+        },
+        "format": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[^\n]*%[^\n]*$"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[^\n]*%[^\n]*$"
+              }
+            }
+          ],
+          "description": "strptime codes for date/datetime, e.g. %d/%m/%Y; a list when files use different formats (the first that fits is used)."
+        },
+        "decimal": {
+          "enum": [
+            ".",
+            ","
+          ],
+          "description": "Decimal separator of a number; with \",\" the \".\" is a thousands separator."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "date",
+                  "datetime"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "format"
+            ],
+            "properties": {
+              "decimal": false
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "number"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "format": false
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "text"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "format": false,
+              "decimal": false
+            }
+          }
+        }
+      ]
+    },
+    "where": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/condition"
+      },
+      "description": "Conditions on columns of the evaluated source, all required. Records outside them are out_of_scope."
+    },
+    "lookup_exists": {
+      "description": "For each record of the `from` source, the key must exist in the `to` source.",
+      "required": [
+        "template",
+        "key"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "template": {
+          "const": "lookup-exists"
+        },
+        "key": {
+          "$ref": "#/$defs/key"
+        },
+        "where": {
+          "$ref": "#/$defs/where"
+        },
+        "timeline": {
+          "$ref": "#/$defs/column_ref",
+          "description": "Optional: a date column of the evaluated source; the dashboard charts the outcomes per year of it."
+        },
+        "expect": {
+          "enum": [
+            "present",
+            "absent"
+          ],
+          "description": "present (default): the key must exist in the lookup source; absent: the lookup source is a watch list and a key found in it is the signal."
+        }
+      }
+    },
+    "temporal_order": {
+      "description": "Dates of one source that must not decrease, in this order; empty dates are skipped (two or more must be present). Optional max_interval between the first and last present dates.",
+      "required": [
+        "template",
+        "sequence"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "template": {
+          "const": "temporal-order"
+        },
+        "sequence": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/column_ref"
+          }
+        },
+        "max_interval": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "maxProperties": 1,
+          "properties": {
+            "years": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 200
+            },
+            "days": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            }
+          }
+        },
+        "where": {
+          "$ref": "#/$defs/where"
+        },
+        "timeline": {
+          "$ref": "#/$defs/column_ref",
+          "description": "Optional: a date column of the evaluated source; the dashboard charts the outcomes per year of it."
+        },
+        "check_order": {
+          "type": "boolean",
+          "description": "false: check only max_interval; records out of order are out of scope (checked by another rule). Default true."
+        }
+      },
+      "if": {
+        "properties": {
+          "check_order": {
+            "const": false
+          }
+        },
+        "required": [
+          "check_order"
+        ]
+      },
+      "then": {
+        "required": [
+          "max_interval"
+        ]
+      }
+    },
+    "field_comparison": {
+      "description": "left op right, on numbers of one source; each side is a column, a fixed number, or {sum: [...], minus: [...]}.",
+      "required": [
+        "template",
+        "left",
+        "op",
+        "right"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "template": {
+          "const": "field-comparison"
+        },
+        "left": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/column_ref"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sum"
+              ],
+              "properties": {
+                "sum": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/column_ref"
+                  }
+                },
+                "minus": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/column_ref"
+                  }
+                },
+                "times": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "description": "Multiplies the sum, e.g. 10 for \"ten times\"."
+                }
+              }
+            }
+          ]
+        },
+        "op": {
+          "enum": [
+            "<",
+            "<=",
+            "=",
+            ">=",
+            ">"
+          ]
+        },
+        "right": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/column_ref"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sum"
+              ],
+              "properties": {
+                "sum": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/column_ref"
+                  }
+                },
+                "minus": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/column_ref"
+                  }
+                },
+                "times": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "description": "Multiplies the sum, e.g. 10 for \"ten times\"."
+                }
+              }
+            }
+          ]
+        },
+        "tolerance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "empty_as_zero": {
+          "type": "boolean",
+          "description": "In sums, an empty value counts as 0."
+        },
+        "where": {
+          "$ref": "#/$defs/where"
+        },
+        "timeline": {
+          "$ref": "#/$defs/column_ref",
+          "description": "Optional: a date column of the evaluated source; the dashboard charts the outcomes per year of it."
+        }
+      }
+    },
+    "key": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from",
+        "to"
+      ],
+      "properties": {
+        "from": {
+          "$ref": "#/$defs/column_ref"
+        },
+        "to": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/column_ref"
+            },
+            {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "$ref": "#/$defs/column_ref"
+              }
+            }
+          ],
+          "description": "A column of the lookup source, or several joined by to_join (e.g. number and series)."
+        },
+        "to_join": {
+          "type": "string",
+          "maxLength": 5,
+          "description": "Separator used to join several `to` columns (default \"-\")."
+        },
+        "split": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 5,
+          "description": "lookup-exists: the `from` field holds several keys separated by this text; every one must exist."
+        },
+        "normalize": {
+          "enum": [
+            "lower",
+            "binomial",
+            "before_parenthesis"
+          ],
+          "description": "Same normalization on both sides of a text key: lower case; binomial (genus and epithet, lower case); before_parenthesis (text before the first parenthesis, lower case)."
+        }
+      }
+    },
+    "condition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "column"
+          ],
+          "minProperties": 2,
+          "maxProperties": 2,
+          "properties": {
+            "column": {
+              "$ref": "#/$defs/column_ref"
+            },
+            "equals": {
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "not_equals": {
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "in": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": [
+                  "string",
+                  "number"
+                ]
+              }
+            },
+            "not_in": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": [
+                  "string",
+                  "number"
+                ]
+              }
+            },
+            "empty": {
+              "type": "boolean"
+            },
+            "at_least": {
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "below": {
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "on_or_after": {
+              "type": "string"
+            },
+            "before": {
+              "type": "string"
+            },
+            "after": {
+              "type": "string"
+            },
+            "on_or_before": {
+              "type": "string"
+            },
+            "above": {
+              "type": [
+                "string",
+                "number"
+              ]
+            },
+            "at_most": {
+              "type": [
+                "string",
+                "number"
+              ]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "all"
+          ],
+          "properties": {
+            "all": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "any"
+          ],
+          "properties": {
+            "any": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          }
+        }
+      ],
+      "description": "A condition on one column (text, or number/date when the column is typed), or a group: all / any. Date comparisons accept \"today\" (the day of the run)."
+    },
+    "flag_when": {
+      "description": "A record is a signal when any of the conditions holds.",
+      "required": [
+        "template",
+        "any"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "template": {
+          "const": "flag-when"
+        },
+        "any": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/condition"
+          }
+        },
+        "where": {
+          "$ref": "#/$defs/where"
+        },
+        "timeline": {
+          "$ref": "#/$defs/column_ref",
+          "description": "Optional: a date column of the evaluated source; the dashboard charts the outcomes per year of it."
+        }
+      }
+    }
+  }
+}

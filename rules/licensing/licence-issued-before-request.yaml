@@ -1,0 +1,38 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Licença emitida antes da entrada do pedido"
+  title_translations:
+    en: "Licence issued before the request was filed"
+  text: >
+    Confere se a data de emissão da licença não é anterior à data de entrada do processo.
+  justification: >
+    A licença é emitida depois do pedido; emissão anterior à entrada do mesmo processo indica erro de
+    data, ou processo de renovação/migração que reaproveita uma licença anterior. É sinal para revisão.
+  exceptions:
+    - "Renovações e migrações de sistema podem reaproveitar datas de licenças anteriores."
+  examples:
+    - case: "Entrada 2021-11-10, emissão 2022-02-01"
+      expected: "Conforme"
+    - case: "Entrada 2021-11-10, emissão 2021-01-05"
+      expected: "Sinalizar"
+
+sources:
+  recife_licencas:
+    portal: https://dados.recife.pe.gov.br
+    dataset: licenciamento-ambiental
+    resource: {name: "Licenciamento Ambiental", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      data_entrada: {meaning: "Data de entrada do processo", type: date, format: "%Y-%m-%d"}
+      data_emissao_licenca: {meaning: "Data de emissão da licença", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: temporal-order
+  timeline: recife_licencas.data_entrada
+  sequence: [recife_licencas.data_entrada, recife_licencas.data_emissao_licenca]
+  where:
+    - {column: recife_licencas.data_emissao_licenca, empty: false}

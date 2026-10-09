@@ -1,0 +1,44 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Acidente sem vítima com vítimas registradas"
+  title_translations:
+    en: "Accident recorded without victims but with victims counted"
+  text: >
+    Sinaliza acidentes de 2022 a 2024 de natureza SEM VÍTIMA com número de vítimas maior que zero.
+  justification: >
+    A natureza do acidente e o número de vítimas descrevem o mesmo fato; "SEM VÍTIMA" com vítimas
+    contadas indica erro de codificação de um dos campos. Chamados cancelados ou duplicados ficam fora.
+    É sinal para revisão.
+  exceptions:
+    - "A natureza pode ter sido registrada no chamado e as vítimas apuradas depois."
+  examples:
+    - case: "SEM VÍTIMA com 0 vítimas"
+      expected: "Conforme"
+    - case: "SEM VÍTIMA com 2 vítimas"
+      expected: "Sinalizar"
+
+sources:
+  recife_acidentes:
+    portal: https://dados.recife.pe.gov.br
+    dataset: acidentes-de-transito-com-e-sem-vitimas
+    resource: {name: "Acidentes de Trânsito 202[234]", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      vitimas: {meaning: "Número de vítimas do acidente", type: number, decimal: ","}
+      situacao: "Situação do chamado (FINALIZADA, CANCELADA, DUPLICIDADE...)"
+      data: {meaning: "Data do acidente", type: date, format: "%Y-%m-%d"}
+      natureza: "Natureza do acidente (COM VÍTIMA, SEM VÍTIMA, VÍTIMA FATAL)"
+
+check:
+  template: flag-when
+  timeline: recife_acidentes.data
+  any:
+    - all:
+        - {column: recife_acidentes.natureza, equals: "SEM VÍTIMA"}
+        - {column: recife_acidentes.vitimas, above: 0}
+  where:
+    - {column: recife_acidentes.situacao, not_in: ["CANCELADA", "DUPLICIDADE"]}

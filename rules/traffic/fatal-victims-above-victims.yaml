@@ -1,0 +1,45 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Vítimas fatais acima do total de vítimas"
+  title_translations:
+    en: "Fatal victims above the total number of victims"
+  text: >
+    Confere, em cada acidente de 2022 a 2024, se o número de vítimas fatais não passa do número de vítimas.
+  justification: >
+    Se o campo de vítimas inclui as fatais, as fatais não podem passar do total (ABNT NBR 10697, termos
+    de sinistros de trânsito). Divergência indica erro de registro, ou que vítimas conta só feridos; o
+    dicionário do recurso precisa confirmar. Contagens publicadas como número com vírgula (1,0). Chamados
+    cancelados ou duplicados ficam fora. É sinal para revisão.
+  exceptions:
+    - "Se 'vitimas' contar só feridos não fatais, a comparação não se sustenta."
+    - "Os anos anteriores a 2022 usam outros nomes de coluna e ficam fora desta regra."
+  examples:
+    - case: "2 vítimas, 1 fatal"
+      expected: "Conforme"
+    - case: "1 vítima, 2 fatais"
+      expected: "Sinalizar"
+
+sources:
+  recife_acidentes:
+    portal: https://dados.recife.pe.gov.br
+    dataset: acidentes-de-transito-com-e-sem-vitimas
+    resource: {name: "Acidentes de Trânsito 202[234]", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      vitimas: {meaning: "Número de vítimas do acidente", type: number, decimal: ","}
+      situacao: "Situação do chamado (FINALIZADA, CANCELADA, DUPLICIDADE...)"
+      data: {meaning: "Data do acidente", type: date, format: "%Y-%m-%d"}
+      vitimasfatais: {meaning: "Número de vítimas fatais do acidente", type: number, decimal: ","}
+
+check:
+  template: field-comparison
+  timeline: recife_acidentes.data
+  left: recife_acidentes.vitimasfatais
+  op: "<="
+  right: recife_acidentes.vitimas
+  where:
+    - {column: recife_acidentes.situacao, not_in: ["CANCELADA", "DUPLICIDADE"]}

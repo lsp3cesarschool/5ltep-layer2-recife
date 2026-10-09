@@ -1,0 +1,37 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Fim da vigência do aditivo anterior ao início"
+  title_translations:
+    en: "Amendment ending before it starts"
+  text: >
+    Confere se a data de fim da vigência de cada termo aditivo não é anterior à data de início.
+  justification: >
+    A vigência do aditivo termina depois de começar; a ordem inversa indica erro de data. É sinal para revisão.
+  exceptions:
+    - "Aditivos sem vigência informada ficam fora do escopo."
+  examples:
+    - case: "Início 2024-01-01, fim 2024-12-31"
+      expected: "Conforme"
+    - case: "Início 2024-01-01, fim 2023-12-31"
+      expected: "Sinalizar"
+
+sources:
+  recife_aditivos:
+    portal: https://dados.recife.pe.gov.br
+    dataset: contratos
+    resource: {name: "Termo Aditivo", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      data_inicio_vigencia: {meaning: "Início da vigência do aditivo", type: date, format: "%Y-%m-%d"}
+      data_fim_vigencia: {meaning: "Fim da vigência do aditivo", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: temporal-order
+  timeline: recife_aditivos.data_inicio_vigencia
+  sequence: [recife_aditivos.data_inicio_vigencia, recife_aditivos.data_fim_vigencia]
+  where:
+    - {column: recife_aditivos.data_inicio_vigencia, empty: false}

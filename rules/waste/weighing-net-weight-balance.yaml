@@ -1,0 +1,42 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Peso útil diferente de peso inicial menos peso final"
+  title_translations:
+    en: "Net weight different from initial minus final weight"
+  text: >
+    Confere, em cada pesagem de 2012 a 2014, se o peso útil é igual ao peso inicial menos o peso final.
+  justification: >
+    Na pesagem do caminhão de coleta, o peso inicial é o veículo carregado e o final a tara: a diferença
+    é o resíduo coletado. Peso útil diferente indica erro de registro ou campos com outro significado
+    (o dicionário precisa confirmar a ordem das pesagens). Pesos em kg, inteiros. Os anos a partir de
+    2015 não publicam o peso inicial e ficam fora. É sinal para revisão.
+  exceptions:
+    - "Se o peso inicial for a tara e o final o veículo carregado, a fórmula se inverte."
+  examples:
+    - case: "Inicial 18000, final 11000, útil 7000"
+      expected: "Conforme"
+    - case: "Inicial 18000, final 11000, útil 9000"
+      expected: "Sinalizar"
+
+sources:
+  recife_pesagem:
+    portal: https://dados.recife.pe.gov.br
+    dataset: pesagem-de-coletas-de-residuos
+    resource: {name: "Pesagem de Resíduos - 201[234]", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      PES_PESOINI: {meaning: "Peso inicial da pesagem, em kg", type: number, decimal: "."}
+      PES_PESOFIM: {meaning: "Peso final da pesagem, em kg", type: number, decimal: "."}
+      PES_PESOUTIL: {meaning: "Peso útil (resíduo), em kg", type: number, decimal: "."}
+      PES_DATAINI: {meaning: "Data da pesagem inicial", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: field-comparison
+  timeline: recife_pesagem.PES_DATAINI
+  left: {sum: [recife_pesagem.PES_PESOINI], minus: [recife_pesagem.PES_PESOFIM]}
+  op: "="
+  right: recife_pesagem.PES_PESOUTIL

@@ -1,0 +1,37 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Validade da licença municipal anterior à emissão"
+  title_translations:
+    en: "Municipal licence valid until a date before it was issued"
+  text: >
+    Confere se a data de validade da licença ambiental não é anterior à data de emissão.
+  justification: >
+    A licença vale depois de emitida; validade anterior à emissão indica erro de data. Mesma família de IB-24 no IBAMA. É sinal para revisão.
+  exceptions:
+    - "Processos sem licença emitida ficam fora do escopo."
+  examples:
+    - case: "Emissão 2022-04-01, validade 2026-04-01"
+      expected: "Conforme"
+    - case: "Emissão 2022-04-01, validade 2021-04-01"
+      expected: "Sinalizar"
+
+sources:
+  recife_licencas:
+    portal: https://dados.recife.pe.gov.br
+    dataset: licenciamento-ambiental
+    resource: {name: "Licenciamento Ambiental", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      data_emissao_licenca: {meaning: "Data de emissão da licença", type: date, format: "%Y-%m-%d"}
+      data_validade_licenca: {meaning: "Data de validade da licença", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: temporal-order
+  timeline: recife_licencas.data_emissao_licenca
+  sequence: [recife_licencas.data_emissao_licenca, recife_licencas.data_validade_licenca]
+  where:
+    - {column: recife_licencas.data_emissao_licenca, empty: false}

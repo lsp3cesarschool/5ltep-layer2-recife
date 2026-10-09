@@ -1,0 +1,37 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Fim da vigência do contrato anterior ao início"
+  title_translations:
+    en: "Contract ending before it starts"
+  text: >
+    Confere se a data de fim da vigência de cada contrato não é anterior à data de início.
+  justification: >
+    A vigência termina depois de começar; fim antes do início indica erro de data. Datas no formato do recurso (2023/05/01 00:00:00.00). É sinal para revisão.
+  exceptions:
+    - "Contratos sem data de fim ficam fora do escopo."
+  examples:
+    - case: "Início 2023/05/01, fim 2024/04/30"
+      expected: "Conforme"
+    - case: "Início 2023/05/01, fim 2022/04/30"
+      expected: "Sinalizar"
+
+sources:
+  recife_contratos:
+    portal: https://dados.recife.pe.gov.br
+    dataset: contratos
+    resource: {name: "Contratos", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      datainiciovigencia: {meaning: "Início da vigência", type: date, format: "%Y/%m/%d %H:%M:%S.%f"}
+      datafimvigencia: {meaning: "Fim da vigência", type: date, format: "%Y/%m/%d %H:%M:%S.%f"}
+
+check:
+  template: temporal-order
+  timeline: recife_contratos.datainiciovigencia
+  sequence: [recife_contratos.datainiciovigencia, recife_contratos.datafimvigencia]
+  where:
+    - {column: recife_contratos.datafimvigencia, empty: false}

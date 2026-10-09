@@ -1,0 +1,37 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Fim da pesagem anterior ao início"
+  title_translations:
+    en: "Weighing ending before it starts"
+  text: >
+    Confere, em cada pesagem de 2012 a 2014, se a data final não é anterior à data inicial (comparação por dia).
+  justification: >
+    A pesagem final vem depois da inicial; data final anterior indica erro de data. A comparação é por
+    dia: data e hora estão em colunas separadas, e virada de dia com hora não é avaliada aqui. É sinal
+    para revisão.
+  exceptions:
+    - "Pesagens que atravessam a meia-noite são comparadas só pela data."
+  examples:
+    - case: "Início 2013-05-10, fim 2013-05-10"
+      expected: "Conforme"
+    - case: "Início 2013-05-10, fim 2013-05-09"
+      expected: "Sinalizar"
+
+sources:
+  recife_pesagem:
+    portal: https://dados.recife.pe.gov.br
+    dataset: pesagem-de-coletas-de-residuos
+    resource: {name: "Pesagem de Resíduos - 201[234]", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      PES_DATAINI: {meaning: "Data da pesagem inicial", type: date, format: "%Y-%m-%d"}
+      PES_DATAFIM: {meaning: "Data da pesagem final", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: temporal-order
+  timeline: recife_pesagem.PES_DATAINI
+  sequence: [recife_pesagem.PES_DATAINI, recife_pesagem.PES_DATAFIM]
