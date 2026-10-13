@@ -11,7 +11,7 @@ abstract: >-
   resource was available, evaluates the rules with DuckDB without external
   access, and publishes counts and record numbers only, with a dashboard. Part
   of the master's thesis cited below. This repository is the instance for
-  https://dados.recife.pe.gov.br, a control case of the IBAMA study.
+  https://dados.recife.pe.gov.br, an application of the same system in another context.
 type: software
 authors:
   - family-names: Pinheiro

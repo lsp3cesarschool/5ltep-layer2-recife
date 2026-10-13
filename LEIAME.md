@@ -1,4 +1,4 @@
-# 5LTEP-L2 · Instância Recife (experimento de controle)
+# 5LTEP-L2 · Instância Recife (aplicação em outro contexto)
 
 [![Testes](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/workflows/tests.yml/badge.svg)](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/workflows/tests.yml) [![Camada 2](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Flsp3cesarschool%2F5ltep-layer2-recife%2Fmain%2Fdocs%2Fdata%2Fstatus.pt.json)](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/workflows/layer2.yml) [![Licença: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -17,7 +17,7 @@ revisão, nunca um veredito sobre os dados.
 | 📏 **Regras** | [`rules/`](rules/): uma verificação por arquivo, em YAML legível |
 | 📁 **Resultados** | [`results/`](results/) e [`docs/data/`](docs/data/): o que cada rodada grava (contagens, números de registro, hashes) |
 | 🏛️ **Instância principal** | [5ltep-layer2](https://github.com/lsp3cesarschool/5ltep-layer2) (IBAMA): a documentação completa e o manual de regras; [dashboard](https://lsp3cesarschool.github.io/5ltep-layer2/?lang=pt) |
-| 🔁 **Outro controle** | [5ltep-layer2-aneel](https://github.com/lsp3cesarschool/5ltep-layer2-aneel) ([dashboard](https://lsp3cesarschool.github.io/5ltep-layer2-aneel/?lang=pt)): o mesmo código no portal da ANEEL |
+| 🔁 **Outra aplicação** | [5ltep-layer2-aneel](https://github.com/lsp3cesarschool/5ltep-layer2-aneel) ([dashboard](https://lsp3cesarschool.github.io/5ltep-layer2-aneel/?lang=pt)): o mesmo código no portal da ANEEL |
 
 > **Estado: demonstração de pesquisa.** Este repositório faz parte de um projeto de mestrado e é
 > mantido pelo autor. Não é operado, afiliado nem endossado pela Prefeitura do Recife nem por
