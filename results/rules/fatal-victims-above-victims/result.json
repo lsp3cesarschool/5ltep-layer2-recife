@@ -1,7 +1,7 @@
 {
- "run_id": "37938028685",
+ "run_id": "38543894696",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37938028685",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/38543894696",
  "id": "fatal-victims-above-victims",
  "rule_version": "0.1.1",
  "origin": "expert",
@@ -31,7 +31,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T13:36:55+00:00",
+ "evaluated_at": "2026-10-14T09:39:40+00:00",
  "total": 12016,
  "counts": {
   "match": 10842,

@@ -1,10 +1,10 @@
 {
  "rule": "no-victim-accident-with-victims",
  "rule_version": "0.1.1",
- "evaluated_at": "2026-10-09T13:36:55+00:00",
- "run_id": "37938028685",
+ "evaluated_at": "2026-10-14T09:39:40+00:00",
+ "run_id": "38543894696",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/37938028685",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/38543894696",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "recife_acidentes": {
