@@ -1,10 +1,10 @@
 {
  "rule": "licence-issued-before-request",
  "rule_version": "0.1.0",
- "evaluated_at": "2026-10-14T09:39:40+00:00",
- "run_id": "38543894696",
+ "evaluated_at": "2026-10-21T09:29:58+00:00",
+ "run_id": "39577329362",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/38543894696",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/39577329362",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "recife_licencas": {
@@ -13,52 +13,53 @@
    "files": null,
    "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
    "archive_members": null,
-   "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2",
-   "records": 49924
+   "sha256": "ba8bc8f458f2d5a0c676c0a55e1667bf65b5692b5ecef0e25a6238404bde9c40",
+   "records": 52693
   }
  },
  "counts": {
-  "match": 17793,
-  "mismatch": 15,
+  "match": 18995,
+  "mismatch": 16,
   "key_not_found": 0,
   "missing_value": 0,
   "invalid_value": 0,
   "ambiguous_key": 0,
-  "out_of_scope": 32116
+  "out_of_scope": 33682
  },
- "total": 49924,
+ "total": 52693,
  "records": {
   "mismatch": {
    "licenciamento_ambiental.csv": [
-    10070,
-    10110,
-    10918,
-    11192,
-    15173,
-    19552,
-    23661,
-    26411,
-    29480,
-    29817,
-    31469,
-    34839,
-    35040,
-    37915,
-    43595
+    9991,
+    10031,
+    10826,
+    11099,
+    15034,
+    19360,
+    23371,
+    26070,
+    29085,
+    29412,
+    31016,
+    34285,
+    34482,
+    37298,
+    42931,
+    52008
    ]
   }
  },
  "members": [
   {
    "name": "licenciamento_ambiental.csv",
-   "records": 49924
+   "records": 52693
   }
  ],
  "by_member": {
   "licenciamento_ambiental.csv": {
-   "match": 17793,
-   "mismatch": 15,
-   "out_of_scope": 32116
+   "match": 18995,
+   "mismatch": 16,
+   "out_of_scope": 33682
   }
  },
  "by_period": {
@@ -66,8 +67,8 @@
    "out_of_scope": 9
   },
   "2018": {
-   "match": 907,
-   "out_of_scope": 2061
+   "match": 909,
+   "out_of_scope": 2062
   },
   "2019": {
    "match": 1828,
@@ -82,28 +83,29 @@
    "out_of_scope": 3795
   },
   "2022": {
-   "match": 2267,
+   "match": 2268,
    "mismatch": 6,
    "out_of_scope": 3887
   },
   "2023": {
    "match": 2507,
    "mismatch": 1,
-   "out_of_scope": 4193
+   "out_of_scope": 4194
   },
   "2024": {
-   "match": 2653,
+   "match": 2656,
    "mismatch": 3,
-   "out_of_scope": 4140
+   "out_of_scope": 4138
   },
   "2025": {
-   "match": 2920,
+   "match": 2928,
    "mismatch": 5,
-   "out_of_scope": 4888
+   "out_of_scope": 4882
   },
   "2026": {
-   "match": 1171,
-   "out_of_scope": 2362
+   "match": 2359,
+   "mismatch": 1,
+   "out_of_scope": 3934
   }
  },
  "timeline": "recife_licencas.data_entrada"

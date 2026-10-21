@@ -1,11 +1,11 @@
 {
- "run_id": "38543894696",
+ "run_id": "39577329362",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/38543894696",
- "started_at": "2026-10-14T09:39:11+00:00",
- "finished_at": "2026-10-14T09:39:43+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/39577329362",
+ "started_at": "2026-10-21T09:29:28+00:00",
+ "finished_at": "2026-10-21T09:30:01+00:00",
  "engine": {
-  "commit": "bcec61947a892de91114c6f9443eae3080699ad0",
+  "commit": "fce20a9b622971c43a3e1cafe741d725554408f6",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -14,9 +14,9 @@
  "download_speed": {
   "primary": {
    "resources": 6,
-   "bytes": 149576252,
-   "seconds": 22.98,
-   "mb_per_s": 6.509
+   "bytes": 143514972,
+   "seconds": 23.41,
+   "mb_per_s": 6.13
   },
   "secondary": {
    "resources": 0,
@@ -25,9 +25,9 @@
    "mb_per_s": null
   },
   "processing": {
-   "bytes": 149576252,
-   "seconds": 4.26,
-   "mb_per_s": 35.112
+   "bytes": 143514972,
+   "seconds": 4.31,
+   "mb_per_s": 33.298
   }
  },
  "rules": [
@@ -133,9 +133,9 @@
    "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
    "status": "ok",
    "resource_id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
-   "metadata_modified": "2026-06-17T11:58:42.626049",
-   "bytes": 40534357,
-   "sha256": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2"
+   "metadata_modified": "2026-10-19T18:50:39.857943",
+   "bytes": 34473077,
+   "sha256": "ba8bc8f458f2d5a0c676c0a55e1667bf65b5692b5ecef0e25a6238404bde9c40"
   },
   {
    "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]",
