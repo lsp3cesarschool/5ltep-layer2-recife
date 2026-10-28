@@ -1454,5 +1454,112 @@
    "bytes_processed": 143514972,
    "outputs_s": 0.02
   }
+ },
+ {
+  "run_id": "40674382639",
+  "environment": "github-actions",
+  "at": "2026-10-28T11:05:01+00:00",
+  "rules": {
+   "amendment-end-before-start": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "amendment-without-contract": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "contract-end-before-start": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "dengue-birth-after-notification": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "dengue-symptoms-after-notification": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "enterprise-coordinates-outside-recife": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "licence-issued-before-request": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "licence-validity-before-issue": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "fatal-victims-above-victims": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "no-victim-accident-with-victims": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "weighing-end-before-start": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "weighing-net-weight-balance": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   }
+  },
+  "sources": {
+   "dados.recife.pe.gov.br › contratos › Termo Aditivo": "portal_unreachable",
+   "dados.recife.pe.gov.br › contratos › Contratos": "portal_unreachable",
+   "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]": "portal_unreachable",
+   "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental": "portal_unreachable",
+   "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]": "portal_unreachable",
+   "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]": "portal_unreachable"
+  },
+  "download_speed": {
+   "primary": {
+    "resources": 0,
+    "bytes": 0,
+    "seconds": 0,
+    "mb_per_s": null
+   },
+   "secondary": {
+    "resources": 0,
+    "bytes": 0,
+    "seconds": 0,
+    "mb_per_s": null
+   }
+  },
+  "timings": {
+   "download_s": 1273.86,
+   "processing_s": 0.0,
+   "bytes_processed": 0,
+   "outputs_s": 0.14
+  }
  }
 ]

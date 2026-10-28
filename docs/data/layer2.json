@@ -1,19 +1,19 @@
 {
  "layer": 2,
- "run_id": "39577329362",
+ "run_id": "40674382639",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/39577329362",
- "generated_at": "2026-10-21T09:30:01+00:00",
- "started_at": "2026-10-21T09:29:28+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/40674382639",
+ "generated_at": "2026-10-28T11:05:01+00:00",
+ "started_at": "2026-10-28T10:43:47+00:00",
  "totals": {
   "rules": 12,
-  "evaluated": 12,
-  "not_evaluated": 0,
+  "evaluated": 0,
+  "not_evaluated": 12,
   "sources": 6,
-  "sources_ok": 6,
-  "signals": 118,
-  "checks": 946002,
-  "l2_rate": 0.999875
+  "sources_ok": 0,
+  "signals": 0,
+  "checks": 0,
+  "l2_rate": null
  },
  "rules": [
   {
@@ -52,29 +52,9 @@
      "label": "dados.recife.pe.gov.br › contratos › Termo Aditivo"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:57+00:00",
-   "total": 13390,
-   "counts": {
-    "match": 11835,
-    "mismatch": 40,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 1515
-   },
-   "signals": 40,
-   "signals_by_outcome": {
-    "mismatch": 40,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/amendment-end-before-start.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_aditivos\" (dados.recife.pe.gov.br › contratos › Termo Aditivo): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "amendment-without-contract",
@@ -116,29 +96,9 @@
      "label": "dados.recife.pe.gov.br › contratos › Contratos"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:57+00:00",
-   "total": 13390,
-   "counts": {
-    "match": 13390,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/amendment-without-contract.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_aditivos\" (dados.recife.pe.gov.br › contratos › Termo Aditivo): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "contract-end-before-start",
@@ -176,29 +136,9 @@
      "label": "dados.recife.pe.gov.br › contratos › Contratos"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:57+00:00",
-   "total": 7912,
-   "counts": {
-    "match": 7899,
-    "mismatch": 6,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 7
-   },
-   "signals": 6,
-   "signals_by_outcome": {
-    "mismatch": 6,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/contract-end-before-start.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_contratos\" (dados.recife.pe.gov.br › contratos › Contratos): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "dengue-birth-after-notification",
@@ -236,29 +176,9 @@
      "label": "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:57+00:00",
-   "total": 22641,
-   "counts": {
-    "match": 22412,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 229
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/dengue-birth-after-notification.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_dengue\" (dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "dengue-symptoms-after-notification",
@@ -296,29 +216,9 @@
      "label": "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:57+00:00",
-   "total": 22641,
-   "counts": {
-    "match": 22611,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 30
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/dengue-symptoms-after-notification.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_dengue\" (dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "enterprise-coordinates-outside-recife",
@@ -356,29 +256,9 @@
      "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:58+00:00",
-   "total": 52693,
-   "counts": {
-    "match": 45737,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 6956
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/enterprise-coordinates-outside-recife.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_licencas\" (dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "licence-issued-before-request",
@@ -416,29 +296,9 @@
      "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:58+00:00",
-   "total": 52693,
-   "counts": {
-    "match": 18995,
-    "mismatch": 16,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 33682
-   },
-   "signals": 16,
-   "signals_by_outcome": {
-    "mismatch": 16,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/licence-issued-before-request.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_licencas\" (dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "licence-validity-before-issue",
@@ -476,29 +336,9 @@
      "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:58+00:00",
-   "total": 52693,
-   "counts": {
-    "match": 19011,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 33682
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/licence-validity-before-issue.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_licencas\" (dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "fatal-victims-above-victims",
@@ -537,29 +377,9 @@
      "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:58+00:00",
-   "total": 12016,
-   "counts": {
-    "match": 10842,
-    "mismatch": 55,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 1119
-   },
-   "signals": 55,
-   "signals_by_outcome": {
-    "mismatch": 55,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/fatal-victims-above-victims.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_acidentes\" (dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "no-victim-accident-with-victims",
@@ -597,29 +417,9 @@
      "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:29:58+00:00",
-   "total": 12016,
-   "counts": {
-    "match": 10897,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 1119
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/no-victim-accident-with-victims.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_acidentes\" (dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "weighing-end-before-start",
@@ -657,29 +457,9 @@
      "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:30:00+00:00",
-   "total": 381128,
-   "counts": {
-    "match": 381128,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/weighing-end-before-start.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_pesagem\" (dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "weighing-net-weight-balance",
@@ -717,29 +497,9 @@
      "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-10-21T09:30:01+00:00",
-   "total": 381128,
-   "counts": {
-    "match": 381127,
-    "mismatch": 1,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 1,
-   "signals_by_outcome": {
-    "mismatch": 1,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/weighing-net-weight-balance.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"recife_pesagem\" (dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]): portal não respondeu: tempo esgotado (60 s)"
   }
  ],
  "sources": [
@@ -750,52 +510,20 @@
    "resource_format": "CSV",
    "label": "dados.recife.pe.gov.br › contratos › Termo Aditivo",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "amendment-end-before-start",
     "amendment-without-contract"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 1.88
+    "seconds": 213.72,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Contratos , Aditivos e Apostilamentos",
-    "organization": "Secretaria de Administração e Gestão de Pessoas",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-03-02T14:29:17.688418"
-   },
-   "resource": {
-    "id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
-    "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/145f5c46-10ea-4c02-ba26-21333ded8ae9/download/termo-aditivo.csv",
-    "name": "Termo Aditivo",
-    "metadata_modified": "2026-03-02T14:29:15.423617",
-    "last_modified": "2026-03-02T14:29:11.065718",
-    "size_declared": 5984530
-   },
-   "download": {
-    "http_status": 200,
-    "etag": null,
-    "last_modified": null,
-    "content_type": "application/octet-stream",
-    "served_by": "ckan-storage-download.app.emprel.gov.br",
-    "bytes": 5984530,
-    "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
-    "seconds": 2.66,
-    "mb_per_s": 2.252
-   },
-   "files": [
-    {
-     "file": "termo-aditivo.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/145f5c46-10ea-4c02-ba26-21333ded8ae9/download/termo-aditivo.csv",
-     "resource_id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
-     "bytes": 5984530,
-     "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -804,52 +532,20 @@
    "resource_format": "CSV",
    "label": "dados.recife.pe.gov.br › contratos › Contratos",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "amendment-without-contract",
     "contract-end-before-start"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.36
+    "seconds": 211.89,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Contratos , Aditivos e Apostilamentos",
-    "organization": "Secretaria de Administração e Gestão de Pessoas",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-03-02T14:29:17.688418"
-   },
-   "resource": {
-    "id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
-    "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/a72e7175-8fcd-40bd-82ef-056a621a6165/download/contratos.csv",
-    "name": "Contratos",
-    "metadata_modified": "2026-03-02T14:29:11.081156",
-    "last_modified": "2026-03-02T14:28:58.147563",
-    "size_declared": 3675647
-   },
-   "download": {
-    "http_status": 200,
-    "etag": null,
-    "last_modified": null,
-    "content_type": "application/octet-stream",
-    "served_by": "ckan-storage-download.app.emprel.gov.br",
-    "bytes": 3675647,
-    "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
-    "seconds": 1.28,
-    "mb_per_s": 2.882
-   },
-   "files": [
-    {
-     "file": "contratos.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/195bb808-d2f0-4a41-8fad-00edadfdc281/resource/a72e7175-8fcd-40bd-82ef-056a621a6165/download/contratos.csv",
-     "resource_id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
-     "bytes": 3675647,
-     "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -858,64 +554,20 @@
    "resource_format": "CSV",
    "label": "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "dengue-birth-after-notification",
     "dengue-symptoms-after-notification"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.56
+    "seconds": 211.29,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Casos de Dengue, Zika e Chikungunya",
-    "organization": "Secretaria de Saúde",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-05-20T10:28:07.518396"
-   },
-   "resource": {
-    "count": 3,
-    "names": [
-     " Casos de Dengue 2022",
-     "Casos de Dengue 2024",
-     "Casos de Dengue 2025"
-    ],
-    "metadata_modified": "2026-03-07T01:10:23.749405"
-   },
-   "download": {
-    "http_status": 200,
-    "bytes": 13170277,
-    "seconds": 3.59,
-    "mb_per_s": 3.669,
-    "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf",
-    "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
-   },
-   "files": [
-    {
-     "file": "-casos-de-dengue-2022.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/a727370f-b948-45f2-9eab-63de525e610e/download/-casos-de-dengue-2022.csv",
-     "resource_id": "a727370f-b948-45f2-9eab-63de525e610e",
-     "bytes": 1675085,
-     "sha256": "1d8846e400cd397c1ab659fdc20da865d2fd42015045f55dbfedfad7f954c09b"
-    },
-    {
-     "file": "casos-de-dengue-2024.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/7755fe11-48f0-4797-ac5a-78d6da0fc8d9/download/casos-de-dengue-2024.csv",
-     "resource_id": "7755fe11-48f0-4797-ac5a-78d6da0fc8d9",
-     "bytes": 6117863,
-     "sha256": "44f5d1952d138b00d9bdacccbb3e913133c1f18ec7cd79c09dba0c98d040b4b5"
-    },
-    {
-     "file": "casos-de-dengue-2025.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5/resource/45a675e2-d387-4019-bb6e-4b915b74b1bf/download/casos-de-dengue-2025.csv",
-     "resource_id": "45a675e2-d387-4019-bb6e-4b915b74b1bf",
-     "bytes": 5377329,
-     "sha256": "b723a5f2186567e328377b83e733b2d88adb9f2d7d2e47749c91d3f8ce5fd5a9"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -924,53 +576,21 @@
    "resource_format": "CSV",
    "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "enterprise-coordinates-outside-recife",
     "licence-issued-before-request",
     "licence-validity-before-issue"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.3
+    "seconds": 212.27,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Licenciamento Ambiental",
-    "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
-    "license": "Licença Aberta para Bases de Dados (ODbL) do Open Data Commons",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-10-19T18:50:39.841547"
-   },
-   "resource": {
-    "id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
-    "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
-    "name": "Licenciamento Ambiental",
-    "metadata_modified": "2026-10-19T18:50:39.857943",
-    "last_modified": "2026-10-19T18:50:39.829961",
-    "size_declared": 34473077
-   },
-   "download": {
-    "http_status": 200,
-    "etag": null,
-    "last_modified": null,
-    "content_type": "application/octet-stream",
-    "served_by": "ckan-storage-download.app.emprel.gov.br",
-    "bytes": 34473077,
-    "sha256": "ba8bc8f458f2d5a0c676c0a55e1667bf65b5692b5ecef0e25a6238404bde9c40",
-    "seconds": 2.44,
-    "mb_per_s": 14.137
-   },
-   "files": [
-    {
-     "file": "licenciamento_ambiental.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
-     "resource_id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
-     "bytes": 34473077,
-     "sha256": "ba8bc8f458f2d5a0c676c0a55e1667bf65b5692b5ecef0e25a6238404bde9c40"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -979,64 +599,20 @@
    "resource_format": "CSV",
    "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "fatal-victims-above-victims",
     "no-victim-accident-with-victims"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.48
+    "seconds": 211.7,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
-    "organization": "Autarquia de Trânsito e Transporte Urbano do Recife - CTTU",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-03-02T13:45:27.485944"
-   },
-   "resource": {
-    "count": 3,
-    "names": [
-     "Acidentes de Trânsito 2022",
-     "Acidentes de Trânsito 2023",
-     "Acidentes de Trânsito 2024"
-    ],
-    "metadata_modified": "2026-03-02T13:44:48.165036"
-   },
-   "download": {
-    "http_status": 200,
-    "bytes": 3657092,
-    "seconds": 5.63,
-    "mb_per_s": 0.65,
-    "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
-    "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
-   },
-   "files": [
-    {
-     "file": "acidentes-de-transito-2022.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/c2281788-2e8c-472c-8812-67c4f85e9272/download/acidentes-de-transito-2022.csv",
-     "resource_id": "c2281788-2e8c-472c-8812-67c4f85e9272",
-     "bytes": 993185,
-     "sha256": "b63341fc83ee98065f95498b75a8f118cd66aadbfdc8274a80842bca14c1b9b9"
-    },
-    {
-     "file": "acidentes-de-transito-2023.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/dbb9165a-7539-4fdd-943a-acffe12df3e0/download/acidentes-de-transito-2023.csv",
-     "resource_id": "dbb9165a-7539-4fdd-943a-acffe12df3e0",
-     "bytes": 1146672,
-     "sha256": "b7b799697908ea894e9c22709155d54586dbf77460ff1c123795db9032687846"
-    },
-    {
-     "file": "acidentes-de-transito-2024.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f/resource/87ac4237-f5f9-44d2-bcf1-927aaa0a2d31/download/acidentes-de-transito-2024.csv",
-     "resource_id": "87ac4237-f5f9-44d2-bcf1-927aaa0a2d31",
-     "bytes": 1517235,
-     "sha256": "375766319e81ba147f40d013c9706abfc91f9017ffa23277533cd23bf0e0d6bd"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -1045,71 +621,27 @@
    "resource_format": "CSV",
    "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "weighing-end-before-start",
     "weighing-net-weight-balance"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.91
+    "seconds": 212.99,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Pesagem de Coletas de Resíduos",
-    "organization": "Empresa de Manutenção e Limpeza Urbana - EMLURB",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-03-04T13:10:34.128868"
-   },
-   "resource": {
-    "count": 3,
-    "names": [
-     "Pesagem de Resíduos - 2012",
-     "Pesagem de Resíduos - 2013",
-     "Pesagem de Resíduos - 2014"
-    ],
-    "metadata_modified": "2026-03-04T13:09:54.743931"
-   },
-   "download": {
-    "http_status": 200,
-    "bytes": 82554349,
-    "seconds": 7.81,
-    "mb_per_s": 10.576,
-    "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
-    "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
-   },
-   "files": [
-    {
-     "file": "pesagem-de-residuos-2012.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/1f8290e6-875c-4407-a390-17dd70be17e5/resource/1c6901ad-863b-4ee7-9cc1-4b0afb6c6458/download/pesagem-de-residuos-2012.csv",
-     "resource_id": "1c6901ad-863b-4ee7-9cc1-4b0afb6c6458",
-     "bytes": 24710980,
-     "sha256": "9e16b405caec40ab11cded5331ab94b1cfe757877db7adac5b381bee20673a5f"
-    },
-    {
-     "file": "pesagem-de-residuos-2013.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/1f8290e6-875c-4407-a390-17dd70be17e5/resource/97622c28-79dd-4273-89a6-9958bf398ade/download/pesagem-de-residuos-2013.csv",
-     "resource_id": "97622c28-79dd-4273-89a6-9958bf398ade",
-     "bytes": 28281082,
-     "sha256": "85c161d081bb479bd39582bce6861fc85ceaecd6f46ec3840b8241f18d1bc25f"
-    },
-    {
-     "file": "pesagem-de-residuos-2014.csv",
-     "url": "https://dados.recife.pe.gov.br:443/dataset/1f8290e6-875c-4407-a390-17dd70be17e5/resource/bf281fbc-167b-4602-994b-30772b11987f/download/pesagem-de-residuos-2014.csv",
-     "resource_id": "bf281fbc-167b-4602-994b-30772b11987f",
-     "bytes": 29562287,
-     "sha256": "1fd71c6ebccfb45b2b9f731320bc3d2d954c31187e360eb7c9d28f847cff19f6"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   }
  ],
  "engine": {
-  "commit": "fce20a9b622971c43a3e1cafe741d725554408f6",
+  "commit": "8329f46b74d30c7ac8ddaebd208459abe5566f38",
   "uncommitted_changes": false,
   "python": "3.12.15",
-  "duckdb": "1.5.6"
+  "duckdb": "2.0.0"
  },
  "rule_files": [
   {
@@ -1188,28 +720,23 @@
  "primary_portal": "https://dados.recife.pe.gov.br",
  "download_speed": {
   "primary": {
-   "resources": 6,
-   "bytes": 143514972,
-   "seconds": 23.41,
-   "mb_per_s": 6.13
+   "resources": 0,
+   "bytes": 0,
+   "seconds": 0,
+   "mb_per_s": null
   },
   "secondary": {
    "resources": 0,
    "bytes": 0,
    "seconds": 0,
    "mb_per_s": null
-  },
-  "processing": {
-   "bytes": 143514972,
-   "seconds": 4.31,
-   "mb_per_s": 33.298
   }
  },
  "timings": {
-  "download_s": 27.89,
-  "processing_s": 4.31,
-  "bytes_processed": 143514972,
-  "outputs_s": 0.02
+  "download_s": 1273.86,
+  "processing_s": 0.0,
+  "bytes_processed": 0,
+  "outputs_s": 0.14
  },
  "portal": {
   "portal_url": "https://dados.recife.pe.gov.br",
@@ -2672,6 +2199,113 @@
     "processing_s": 4.31,
     "bytes_processed": 143514972,
     "outputs_s": 0.02
+   }
+  },
+  {
+   "run_id": "40674382639",
+   "environment": "github-actions",
+   "at": "2026-10-28T11:05:01+00:00",
+   "rules": {
+    "amendment-end-before-start": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "amendment-without-contract": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "contract-end-before-start": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "dengue-birth-after-notification": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "dengue-symptoms-after-notification": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "enterprise-coordinates-outside-recife": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "licence-issued-before-request": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "licence-validity-before-issue": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "fatal-victims-above-victims": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "no-victim-accident-with-victims": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "weighing-end-before-start": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "weighing-net-weight-balance": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    }
+   },
+   "sources": {
+    "dados.recife.pe.gov.br › contratos › Termo Aditivo": "portal_unreachable",
+    "dados.recife.pe.gov.br › contratos › Contratos": "portal_unreachable",
+    "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]": "portal_unreachable",
+    "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental": "portal_unreachable",
+    "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]": "portal_unreachable",
+    "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]": "portal_unreachable"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 0,
+     "bytes": 0,
+     "seconds": 0,
+     "mb_per_s": null
+    },
+    "secondary": {
+     "resources": 0,
+     "bytes": 0,
+     "seconds": 0,
+     "mb_per_s": null
+    }
+   },
+   "timings": {
+    "download_s": 1273.86,
+    "processing_s": 0.0,
+    "bytes_processed": 0,
+    "outputs_s": 0.14
    }
   }
  ]

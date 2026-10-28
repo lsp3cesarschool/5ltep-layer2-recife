@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
  "label": "Camada 2",
- "color": "brightgreen",
- "message": "12/12 regras · 6/6 fontes ok · 118 sinais"
+ "color": "red",
+ "message": "0/12 regras · 0/6 fontes ok · 0 sinais"
 }
