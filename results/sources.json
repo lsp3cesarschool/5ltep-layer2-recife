@@ -1,8 +1,8 @@
 {
- "run_id": "40674382639",
+ "run_id": "41828826950",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/40674382639",
- "checked_at": "2026-10-28T11:05:01+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/41828826950",
+ "checked_at": "2026-11-04T12:44:39+00:00",
  "sources": [
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -18,7 +18,7 @@
     "amendment-without-contract"
    ],
    "package_show": {
-    "seconds": 213.72,
+    "seconds": 211.28,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -40,7 +40,7 @@
     "contract-end-before-start"
    ],
    "package_show": {
-    "seconds": 211.89,
+    "seconds": 210.6,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -62,7 +62,7 @@
     "dengue-symptoms-after-notification"
    ],
    "package_show": {
-    "seconds": 211.29,
+    "seconds": 210.82,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -85,7 +85,7 @@
     "licence-validity-before-issue"
    ],
    "package_show": {
-    "seconds": 212.27,
+    "seconds": 211.17,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -107,7 +107,7 @@
     "no-victim-accident-with-victims"
    ],
    "package_show": {
-    "seconds": 211.7,
+    "seconds": 210.7,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -129,7 +129,7 @@
     "weighing-net-weight-balance"
    ],
    "package_show": {
-    "seconds": 212.99,
+    "seconds": 210.55,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},

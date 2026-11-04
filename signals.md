@@ -6,7 +6,7 @@ Generated automatically by the publish job from the checked results; do not edit
 shown here: the record numbers are on the dashboard and in [`docs/data/rules/`](docs/data/rules/),
 and no value read from the portals is published. Times are UTC.
 
-- **Run:** [40674382639](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/40674382639), finished 2026-10-28 11:05 UTC (github-actions)
+- **Run:** [41828826950](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/41828826950), finished 2026-11-04 12:44 UTC (github-actions)
 - **Rules:** 12 (0 evaluated, 12 not evaluated)
 - **Sources:** 6 CKAN resources (0 available)
 - **Records flagged:** 0
