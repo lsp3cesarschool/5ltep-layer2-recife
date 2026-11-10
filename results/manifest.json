@@ -1,28 +1,33 @@
 {
- "run_id": "41828826950",
+ "run_id": "42812011370",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/41828826950",
- "started_at": "2026-11-04T12:23:33+00:00",
- "finished_at": "2026-11-04T12:44:39+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/42812011370",
+ "started_at": "2026-11-10T12:00:08+00:00",
+ "finished_at": "2026-11-10T12:00:32+00:00",
  "engine": {
-  "commit": "25af13452934de335c6a91f9f160c8544a197b24",
+  "commit": "d5c74c101db907d8b82e5be5b0dee4ee561915b1",
   "uncommitted_changes": false,
-  "python": "3.12.15",
+  "python": "3.12.16",
   "duckdb": "2.0.0"
  },
  "primary_portal": "https://dados.recife.pe.gov.br",
  "download_speed": {
   "primary": {
-   "resources": 0,
-   "bytes": 0,
-   "seconds": 0,
-   "mb_per_s": null
+   "resources": 6,
+   "bytes": 145015569,
+   "seconds": 18.28,
+   "mb_per_s": 7.933
   },
   "secondary": {
    "resources": 0,
    "bytes": 0,
    "seconds": 0,
    "mb_per_s": null
+  },
+  "processing": {
+   "bytes": 145015569,
+   "seconds": 2.32,
+   "mb_per_s": 62.507
   }
  },
  "rules": [
@@ -102,51 +107,51 @@
  "sources": [
   {
    "label": "dados.recife.pe.gov.br › contratos › Termo Aditivo",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "145f5c46-10ea-4c02-ba26-21333ded8ae9",
+   "metadata_modified": "2026-03-02T14:29:15.423617",
+   "bytes": 5984530,
+   "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550"
   },
   {
    "label": "dados.recife.pe.gov.br › contratos › Contratos",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "a72e7175-8fcd-40bd-82ef-056a621a6165",
+   "metadata_modified": "2026-03-02T14:29:11.081156",
+   "bytes": 3675647,
+   "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44"
   },
   {
    "label": "dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245]",
-   "status": "portal_unreachable",
+   "status": "ok",
    "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "metadata_modified": "2026-03-07T01:10:23.749405",
+   "bytes": 13170277,
+   "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf"
   },
   {
    "label": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
+   "metadata_modified": "2026-10-27T14:41:15.112401",
+   "bytes": 35973674,
+   "sha256": "95ce958f37fb02cd0ae0c878d0ab8a1b1707505c08c955802b1389e42baa127a"
   },
   {
    "label": "dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234]",
-   "status": "portal_unreachable",
+   "status": "ok",
    "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "metadata_modified": "2026-03-02T13:44:48.165036",
+   "bytes": 3657092,
+   "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79"
   },
   {
    "label": "dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234]",
-   "status": "portal_unreachable",
+   "status": "ok",
    "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "metadata_modified": "2026-03-04T13:09:54.743931",
+   "bytes": 82554349,
+   "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095"
   }
  ]
 }
