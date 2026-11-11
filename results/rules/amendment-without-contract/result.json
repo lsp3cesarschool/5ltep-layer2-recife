@@ -1,7 +1,7 @@
 {
- "run_id": "42812011370",
+ "run_id": "43016601432",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/42812011370",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/43016601432",
  "id": "amendment-without-contract",
  "rule_version": "0.1.1",
  "origin": "cross_reference",
@@ -34,7 +34,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-11-10T12:00:30+00:00",
+ "evaluated_at": "2026-11-11T12:00:55+00:00",
  "total": 13390,
  "counts": {
   "match": 13390,

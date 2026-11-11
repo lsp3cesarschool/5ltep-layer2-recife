@@ -1,10 +1,10 @@
 {
  "rule": "licence-issued-before-request",
  "rule_version": "0.1.0",
- "evaluated_at": "2026-11-10T12:00:31+00:00",
- "run_id": "42812011370",
+ "evaluated_at": "2026-11-11T12:00:56+00:00",
+ "run_id": "43016601432",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/42812011370",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/43016601432",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "recife_licencas": {
