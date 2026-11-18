@@ -6,7 +6,7 @@ Generated automatically by the publish job from the checked results; do not edit
 shown here: the record numbers are on the dashboard and in [`docs/data/rules/`](docs/data/rules/),
 and no value read from the portals is published. Times are UTC.
 
-- **Run:** [43016601432](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/43016601432), finished 2026-11-11 12:00 UTC (github-actions)
+- **Run:** [44312262054](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/44312262054), finished 2026-11-18 13:18 UTC (github-actions)
 - **Rules:** 12 (12 evaluated, 0 not evaluated)
 - **Sources:** 6 CKAN resources (6 available)
 - **Records flagged:** 118
@@ -37,9 +37,9 @@ than one match). Records outside a rule's scope (`where`) are not signals.
 
 | Resource | Role | Status | Size | Download | Used by |
 |---|---|---|---:|---:|---|
-| dados.recife.pe.gov.br › contratos › Termo Aditivo | primary | available | 6.0 MB | 2.5 s | amendment-end-before-start, amendment-without-contract |
-| dados.recife.pe.gov.br › contratos › Contratos | primary | available | 3.7 MB | 0.9 s | amendment-without-contract, contract-end-before-start |
-| dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245] | primary | available | 13.2 MB | 2.9 s | dengue-birth-after-notification, dengue-symptoms-after-notification |
-| dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental | primary | available | 36.0 MB | 2.3 s | enterprise-coordinates-outside-recife, licence-issued-before-request, licence-validity-before-issue |
-| dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234] | primary | available | 3.7 MB | 2.5 s | fatal-victims-above-victims, no-victim-accident-with-victims |
-| dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234] | primary | available | 82.6 MB | 5.8 s | weighing-end-before-start, weighing-net-weight-balance |
+| dados.recife.pe.gov.br › contratos › Termo Aditivo | primary | available | 6.0 MB | 3.0 s | amendment-end-before-start, amendment-without-contract |
+| dados.recife.pe.gov.br › contratos › Contratos | primary | available | 3.7 MB | 1.0 s | amendment-without-contract, contract-end-before-start |
+| dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245] | primary | available | 13.2 MB | 3.5 s | dengue-birth-after-notification, dengue-symptoms-after-notification |
+| dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental | primary | available | 36.0 MB | 3.4 s | enterprise-coordinates-outside-recife, licence-issued-before-request, licence-validity-before-issue |
+| dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234] | primary | available | 3.7 MB | 3.4 s | fatal-victims-above-victims, no-victim-accident-with-victims |
+| dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234] | primary | available | 82.6 MB | 7.1 s | weighing-end-before-start, weighing-net-weight-balance |
