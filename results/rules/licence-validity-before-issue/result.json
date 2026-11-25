@@ -1,7 +1,7 @@
 {
- "run_id": "44312262054",
+ "run_id": "45637754523",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/44312262054",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/45637754523",
  "id": "licence-validity-before-issue",
  "rule_version": "0.1.1",
  "origin": "expert",
@@ -30,16 +30,16 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-11-18T13:18:27+00:00",
- "total": 53980,
+ "evaluated_at": "2026-11-25T14:47:17+00:00",
+ "total": 54573,
  "counts": {
-  "match": 20040,
+  "match": 20293,
   "mismatch": 0,
   "key_not_found": 0,
   "missing_value": 0,
   "invalid_value": 0,
   "ambiguous_key": 0,
-  "out_of_scope": 33940
+  "out_of_scope": 34280
  },
  "signals": 0,
  "signals_by_outcome": {
@@ -54,16 +54,16 @@
   "recife_licencas": {
    "resource": "dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental",
    "fetch_status": "ok",
-   "sha256": "95ce958f37fb02cd0ae0c878d0ab8a1b1707505c08c955802b1389e42baa127a",
+   "sha256": "aa1d45e1fdf0007d0f33913945ce8179c98590a0be5adedb2faa5f98c2cd637b",
    "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
    "file": "licenciamento_ambiental.csv",
    "files": null,
    "archive_members": null,
-   "records": 53980,
+   "records": 54573,
    "members": [
     {
      "name": "licenciamento_ambiental.csv",
-     "records": 53980
+     "records": 54573
     }
    ]
   }

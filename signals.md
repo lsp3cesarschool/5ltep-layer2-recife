@@ -6,11 +6,11 @@ Generated automatically by the publish job from the checked results; do not edit
 shown here: the record numbers are on the dashboard and in [`docs/data/rules/`](docs/data/rules/),
 and no value read from the portals is published. Times are UTC.
 
-- **Run:** [44312262054](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/44312262054), finished 2026-11-18 13:18 UTC (github-actions)
+- **Run:** [45637754523](https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/45637754523), finished 2026-11-25 14:47 UTC (github-actions)
 - **Rules:** 12 (12 evaluated, 0 not evaluated)
 - **Sources:** 6 CKAN resources (6 available)
 - **Records flagged:** 118
-- **L2 pass rate:** 99.98% (checks without a signal / 949,138 checks in scope; one check per record and rule)
+- **L2 pass rate:** 99.98% (checks without a signal / 950,129 checks in scope; one check per record and rule)
 
 Signal types: `mismatch` (the check failed), `key not found` (no matching record in the other
 source), `missing value`, `invalid value` (unreadable as the declared type), `ambiguous key` (more
@@ -22,14 +22,14 @@ than one match). Records outside a rule's scope (`where`) are not signals.
 |---|---:|---:|---:|---|
 | [Fatal victims above the total number of victims](rules/traffic/fatal-victims-above-victims.yaml) | 12,016 | 55 | 55 | mismatch 55 |
 | [Amendment ending before it starts](rules/contracts/amendment-end-before-start.yaml) | 13,390 | 40 | 40 | mismatch 40 |
-| [Licence issued before the request was filed](rules/licensing/licence-issued-before-request.yaml) | 53,980 | 16 | 16 | mismatch 16 |
+| [Licence issued before the request was filed](rules/licensing/licence-issued-before-request.yaml) | 54,573 | 16 | 16 | mismatch 16 |
 | [Contract ending before it starts](rules/contracts/contract-end-before-start.yaml) | 7,912 | 6 | 6 | mismatch 6 |
 | [Net weight different from initial minus final weight](rules/waste/weighing-net-weight-balance.yaml) | 381,128 | 1 | 1 | mismatch 1 |
 | [Amendment without a matching contract in the extract](rules/contracts/amendment-without-contract.yaml) | 13,390 | 0 | 0 | none |
 | [Birth date after the dengue notification](rules/health/dengue-birth-after-notification.yaml) | 22,641 | 0 | 0 | none |
 | [Dengue first symptoms dated after the notification](rules/health/dengue-symptoms-after-notification.yaml) | 22,641 | 0 | 0 | none |
-| [Licensed enterprise located outside Recife](rules/licensing/enterprise-coordinates-outside-recife.yaml) | 53,980 | 0 | 0 | none |
-| [Municipal licence valid until a date before it was issued](rules/licensing/licence-validity-before-issue.yaml) | 53,980 | 0 | 0 | none |
+| [Licensed enterprise located outside Recife](rules/licensing/enterprise-coordinates-outside-recife.yaml) | 54,573 | 0 | 0 | none |
+| [Municipal licence valid until a date before it was issued](rules/licensing/licence-validity-before-issue.yaml) | 54,573 | 0 | 0 | none |
 | [Accident recorded without victims but with victims counted](rules/traffic/no-victim-accident-with-victims.yaml) | 12,016 | 0 | 0 | none |
 | [Weighing ending before it starts](rules/waste/weighing-end-before-start.yaml) | 381,128 | 0 | 0 | none |
 
@@ -37,9 +37,9 @@ than one match). Records outside a rule's scope (`where`) are not signals.
 
 | Resource | Role | Status | Size | Download | Used by |
 |---|---|---|---:|---:|---|
-| dados.recife.pe.gov.br › contratos › Termo Aditivo | primary | available | 6.0 MB | 3.0 s | amendment-end-before-start, amendment-without-contract |
-| dados.recife.pe.gov.br › contratos › Contratos | primary | available | 3.7 MB | 1.0 s | amendment-without-contract, contract-end-before-start |
-| dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245] | primary | available | 13.2 MB | 3.5 s | dengue-birth-after-notification, dengue-symptoms-after-notification |
-| dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental | primary | available | 36.0 MB | 3.4 s | enterprise-coordinates-outside-recife, licence-issued-before-request, licence-validity-before-issue |
-| dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234] | primary | available | 3.7 MB | 3.4 s | fatal-victims-above-victims, no-victim-accident-with-victims |
-| dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234] | primary | available | 82.6 MB | 7.1 s | weighing-end-before-start, weighing-net-weight-balance |
+| dados.recife.pe.gov.br › contratos › Termo Aditivo | primary | available | 6.0 MB | 2.8 s | amendment-end-before-start, amendment-without-contract |
+| dados.recife.pe.gov.br › contratos › Contratos | primary | available | 3.7 MB | 1.4 s | amendment-without-contract, contract-end-before-start |
+| dados.recife.pe.gov.br › casos-de-dengue-zika-e-chikungunya › Casos de Dengue 202[245] | primary | available | 13.2 MB | 3.2 s | dengue-birth-after-notification, dengue-symptoms-after-notification |
+| dados.recife.pe.gov.br › licenciamento-ambiental › Licenciamento Ambiental | primary | available | 36.4 MB | 2.1 s | enterprise-coordinates-outside-recife, licence-issued-before-request, licence-validity-before-issue |
+| dados.recife.pe.gov.br › acidentes-de-transito-com-e-sem-vitimas › Acidentes de Trânsito 202[234] | primary | available | 3.7 MB | 4.8 s | fatal-victims-above-victims, no-victim-accident-with-victims |
+| dados.recife.pe.gov.br › pesagem-de-coletas-de-residuos › Pesagem de Resíduos - 201[234] | primary | available | 82.6 MB | 6.2 s | weighing-end-before-start, weighing-net-weight-balance |

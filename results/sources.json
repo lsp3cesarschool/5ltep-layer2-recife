@@ -1,8 +1,8 @@
 {
- "run_id": "44312262054",
+ "run_id": "45637754523",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/44312262054",
- "checked_at": "2026-11-18T13:18:29+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-recife/actions/runs/45637754523",
+ "checked_at": "2026-11-25T14:47:20+00:00",
  "sources": [
   {
    "portal": "https://dados.recife.pe.gov.br",
@@ -19,7 +19,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 2.2
+    "seconds": 3.01
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
@@ -45,8 +45,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 5984530,
     "sha256": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
-    "seconds": 2.98,
-    "mb_per_s": 2.009
+    "seconds": 2.84,
+    "mb_per_s": 2.108
    },
    "files": [
     {
@@ -73,7 +73,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.37
+    "seconds": 0.33
    },
    "dataset": {
     "title": "Contratos , Aditivos e Apostilamentos",
@@ -99,8 +99,8 @@
     "served_by": "ckan-storage-download.app.emprel.gov.br",
     "bytes": 3675647,
     "sha256": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
-    "seconds": 0.97,
-    "mb_per_s": 3.795
+    "seconds": 1.4,
+    "mb_per_s": 2.624
    },
    "files": [
     {
@@ -127,7 +127,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.67
+    "seconds": 0.63
    },
    "dataset": {
     "title": "Casos de Dengue, Zika e Chikungunya",
@@ -149,8 +149,8 @@
    "download": {
     "http_status": 200,
     "bytes": 13170277,
-    "seconds": 3.52,
-    "mb_per_s": 3.743,
+    "seconds": 3.24,
+    "mb_per_s": 4.066,
     "sha256": "c4f13306bac360eeea5c41014b8e477b6e56e104633c7e97555ff16e0d65b9cf",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -194,23 +194,23 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.31
+    "seconds": 0.44
    },
    "dataset": {
     "title": "Licenciamento Ambiental",
     "organization": "Secretaria de Desenvolvimento Urbano e Licenciamento - SEDUL",
-    "license": "Open Data Commons Open Database License (ODbL)",
+    "license": "Licença Aberta para Bases de Dados (ODbL) do Open Data Commons",
     "license_id": "odc-odbl",
     "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-10-27T14:41:15.106945"
+    "metadata_modified": "2026-11-19T13:34:11.538464"
    },
    "resource": {
     "id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
     "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
     "name": "Licenciamento Ambiental",
-    "metadata_modified": "2026-10-27T14:41:15.112401",
-    "last_modified": "2026-10-27T14:41:15.092244",
-    "size_declared": 35973674
+    "metadata_modified": "2026-11-19T13:34:11.548362",
+    "last_modified": "2026-11-19T13:34:11.526879",
+    "size_declared": 36400838
    },
    "download": {
     "http_status": 200,
@@ -218,18 +218,18 @@
     "last_modified": null,
     "content_type": "application/octet-stream",
     "served_by": "ckan-storage-download.app.emprel.gov.br",
-    "bytes": 35973674,
-    "sha256": "95ce958f37fb02cd0ae0c878d0ab8a1b1707505c08c955802b1389e42baa127a",
-    "seconds": 3.36,
-    "mb_per_s": 10.694
+    "bytes": 36400838,
+    "sha256": "aa1d45e1fdf0007d0f33913945ce8179c98590a0be5adedb2faa5f98c2cd637b",
+    "seconds": 2.13,
+    "mb_per_s": 17.094
    },
    "files": [
     {
      "file": "licenciamento_ambiental.csv",
      "url": "https://dados.recife.pe.gov.br:443/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82/resource/982d6c85-906a-4ea8-90e0-31f55eac63f9/download/licenciamento_ambiental.csv",
      "resource_id": "982d6c85-906a-4ea8-90e0-31f55eac63f9",
-     "bytes": 35973674,
-     "sha256": "95ce958f37fb02cd0ae0c878d0ab8a1b1707505c08c955802b1389e42baa127a"
+     "bytes": 36400838,
+     "sha256": "aa1d45e1fdf0007d0f33913945ce8179c98590a0be5adedb2faa5f98c2cd637b"
     }
    ]
   },
@@ -248,7 +248,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.73
+    "seconds": 0.45
    },
    "dataset": {
     "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
@@ -270,8 +270,8 @@
    "download": {
     "http_status": 200,
     "bytes": 3657092,
-    "seconds": 3.43,
-    "mb_per_s": 1.066,
+    "seconds": 4.8,
+    "mb_per_s": 0.762,
     "sha256": "8c8be0bfbf23f0acb07cc1feef7e604c0823839417f80a3a9b1dd39d87382a79",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
@@ -314,7 +314,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.42
+    "seconds": 0.28
    },
    "dataset": {
     "title": "Pesagem de Coletas de Resíduos",
@@ -336,8 +336,8 @@
    "download": {
     "http_status": 200,
     "bytes": 82554349,
-    "seconds": 7.06,
-    "mb_per_s": 11.701,
+    "seconds": 6.24,
+    "mb_per_s": 13.239,
     "sha256": "da2caeea7ab9dc71d2fb44144868be8fca37a32dd2db3c1f7c767972f5216095",
     "sha256_note": "SHA-256 dos SHA-256 de cada arquivo, na ordem dos nomes"
    },
